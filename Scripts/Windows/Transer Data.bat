@@ -8,13 +8,14 @@ REM Source: https://github.com/justinchapdelaine/latteit
 REM Reset variables
 SET confirm=n
 
-REM Get source destination
+REM Get source and destination with verification
 SET /p "source=Enter Source: "
 SET /p "destination=Enter Destination: "
 SET /p "confirm=Is source and destination correct? [y/n]: "
 
 IF not %confirm%==y exit
 
+REM Copy files from source to destination
 robocopy "%source%" "%destination%" /E /R:3 /W:1 /MT:16 /V /TEE /LOG:"%destination%"\Backup.log
 
 PAUSE
