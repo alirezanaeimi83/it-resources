@@ -6,7 +6,7 @@ REM Source: https://github.com/justinchapdelaine/IT-Resources
 REM Use to get all installed packages: Get-AppxPackage | Select Name , PackageFullName
 REM To output all installed packages to desktop: Get-AppxPackage | Select Name, PackageFullName >"$env:userprofile\Desktop\InstalledApps_List.txt"
 
-REM Disable Consumer Experience (Automatically Installed Apps)
+REM Disable Consumer Experience (Automatically Re-Install Apps)
 REG ADD HKLM\Software\Policies\Microsoft\Windows\CloudContent /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1
 
 REM Remove Utilities
