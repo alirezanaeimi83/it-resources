@@ -9,6 +9,9 @@ REM To output all installed packages to desktop: Get-AppxPackage | Select Name, 
 REM Disable Consumer Experience (Automatically Re-Install Apps)
 REG ADD HKLM\Software\Policies\Microsoft\Windows\CloudContent /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1
 
+REM Disable Suggestion In Start
+REG ADD HKLM\Software\Policies\Microsoft\Windows\CloudContent /v SubscribedContent-338388Enabled /t REG_DWORD /d 0
+
 REM Remove Utilities
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Microsoft.OneConnect* | Remove-AppxPackage"
