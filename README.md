@@ -1,2 +1,2 @@
-# latteit
-Code used for Latte IT
+# IT Resources
+Work in progress...
