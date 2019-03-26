@@ -13,3 +13,5 @@ wmic diskdrive get status
 
 REM Create initial restore point
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'STAPLES - Start Setup'"
+
+PAUSE
