@@ -96,5 +96,6 @@ echo Removing Microsoft (Surface) Specific
 
 echo Unpining Non-Installed Bloatware (incomplete)
 
+REM
 echo Bloatware removal complete!
 PAUSE
