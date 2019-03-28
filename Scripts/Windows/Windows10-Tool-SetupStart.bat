@@ -32,7 +32,6 @@ REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 rem Serial Number
 wmic bios get serialnumber
-echo: 
 
 echo Disable sleep and monitor timeout
 powercfg /change monitor-timeout-ac 0
@@ -43,7 +42,9 @@ echo S.M.A.R.T. status
 wmic diskdrive get status
 echo: 
 
-REM Create initial restore point
+echo Create initial restore point
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Enable-ComputerRestore -Drive 'C:\'"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "vssadmin resize shadowstorage /on=C: /for=C: /maxsize=5%"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'STAPLES - Setup Start'"
 echo: 
 
