@@ -32,20 +32,20 @@ REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 rem Serial Number
 wmic bios get serialnumber
-rem 
+echo: 
 
 echo Disable sleep and monitor timeout
 powercfg /change monitor-timeout-ac 0
 powercfg /change standby-timeout-ac 0
-rem 
+echo: 
 
 echo S.M.A.R.T. status
 wmic diskdrive get status
-rem 
+echo: 
 
 REM Create initial restore point
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'STAPLES - Setup Start'"
-rem 
+echo: 
 
 echo Start your setup!
 PAUSE
