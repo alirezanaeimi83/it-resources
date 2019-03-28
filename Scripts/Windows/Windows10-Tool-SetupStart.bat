@@ -39,12 +39,11 @@ powercfg /change standby-timeout-ac 0
 echo: 
 
 echo S.M.A.R.T. status
-wmic diskdrive get status
-echo: 
+wmic diskdrive get status 
 
 echo Create initial restore point
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Enable-ComputerRestore -Drive 'C:\'"
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "vssadmin resize shadowstorage /on=C: /for=C: /maxsize=5%"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "vssadmin Resize ShadowStorage /For=C: /On=C: /MaxSize=5%"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'STAPLES - Setup Start'"
 echo: 
 
