@@ -89,8 +89,15 @@ echo 5. Removing Acer Specific
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *AcerCollectionS* | Remove-AppxPackage"
 
 echo 6. Remove HP Specific
+REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
+REM --- Programs ---
+wmic product where name="'HP JumpStart Launch'" uninstall
+wmic product where name="'HP JumpStart Bridge'" uninstall
+wmic product where name="'HP Customer Experience Enhancements'" uninstall
+wmic product where name="'HP Registration Service'" uninstall
+
 
 echo 7. Removing Lenovo Specific
 
