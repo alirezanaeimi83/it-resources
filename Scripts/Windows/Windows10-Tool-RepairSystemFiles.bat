@@ -33,11 +33,11 @@ REM Source: https://github.com/justinchapdelaine/IT-Resources
 REM Source:
 REM https://support.microsoft.com/en-ca/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system
 
-echo Repair system image
+echo 1. Repair system image
 DISM.exe /Online /Cleanup-image /Restorehealth
 echo:
 
-echo Repair system files
+echo 2. Repair system files
 sfc /scannow
 echo:
 
