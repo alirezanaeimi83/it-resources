@@ -9,3 +9,5 @@ md C:\STS
 
 REM Download Done!
 PAUSE
+
+https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe
