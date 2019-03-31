@@ -36,7 +36,7 @@ wmic bios get serialnumber
 echo Disable sleep and monitor timeout
 powercfg /change monitor-timeout-ac 0
 powercfg /change standby-timeout-ac 0
-echo: 
+echo Done
 
 echo S.M.A.R.T. status
 wmic diskdrive get status 
