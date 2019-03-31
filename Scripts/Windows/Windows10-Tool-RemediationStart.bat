@@ -25,9 +25,9 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-REM Start Service will get serial number, disable sleep, and get S.M.A.R.T. status
+REM Remediation Service will get serial number, disable sleep, and get S.M.A.R.T. status
 REM Author: Justin Chapdelaine
-REM Version: 20190323.1
+REM Version: 20190330.2
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 rem Serial Number
