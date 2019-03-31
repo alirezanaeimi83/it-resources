@@ -1,13 +1,12 @@
-REM Download ADWCleaner
+@echo off 
+
+REM Download and run ADWCleaner
 REM Author: Justin Chapdelaine
-REM Version: 20190323.1
+REM Version: 20190330.1
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
-REM Downloading ADWCleaner to C:\STS\
-md C:\STS
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "& {Invoke-WebRequest -Uri 'http://files2.majorgeeks.com/4ce393c4a7caa63badce4afca5a905c786a66d4f/spyware/adwcleaner-7.2.7.0.exe' -OutFile 'C:\STS\ADWCleaner.exe'}"
+echo Downloading ADWCleaner
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "& {$P = $env:TEMP + '\adw.exe'; Invoke-WebRequest 'https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe' -OutFile $P; Start-Process -FilePath $P -Args '' -Verb RunAs -Wait; Remove-Item $P}"
+echo:
 
-REM Download Done!
 PAUSE
-
-https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe
