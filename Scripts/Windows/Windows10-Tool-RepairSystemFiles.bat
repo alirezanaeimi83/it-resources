@@ -30,6 +30,9 @@ REM Author: Justin Chapdelaine
 REM Version: 20190330.1
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
+REM Source:
+REM https://support.microsoft.com/en-ca/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system
+
 echo Repair system image
 DISM.exe /Online /Cleanup-image /Restorehealth
 echo:
