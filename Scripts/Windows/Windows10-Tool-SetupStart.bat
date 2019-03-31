@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-REM Start Service will get serial number, disable sleep, and get S.M.A.R.T. status
+REM Start Service will get serial number, disable sleep, and get S.M.A.R.T. status, Create restore point
 REM Author: Justin Chapdelaine
 REM Version: 20190323.1
 REM Source: https://github.com/justinchapdelaine/IT-Resources
@@ -36,7 +36,7 @@ wmic bios get serialnumber
 echo Disable sleep and monitor timeout
 powercfg /change monitor-timeout-ac 0
 powercfg /change standby-timeout-ac 0
-echo: 
+echo Done 
 
 echo S.M.A.R.T. status
 wmic diskdrive get status 
