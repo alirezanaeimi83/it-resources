@@ -6,6 +6,7 @@
 > - [ ] Is backup required
 
 #### 2. Hardware
+------------ | -------------
 > - [ ] S.M.A.R.T check > Hard Drive Test Result: Pass/Fail | Résultat du test du disque dur : réussite/échec
 
 #### 3. Remediation
