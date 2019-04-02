@@ -1,9 +1,9 @@
 # PC Setup
 
 #### 1. Initial
- - [ ] Disable monitor timeout and sleep
- - [ ] Verify serial number 
- - [ ] Create restore point
+> - [ ] Disable monitor timeout and sleep
+> - [ ] Verify serial number 
+> - [ ] Create restore point
  
 #### 2. Updates
  - [ ] System Updates
