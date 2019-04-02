@@ -6,7 +6,7 @@
 > - [ ] Is backup required
 
 #### 2. Hardware
-Tasks | Note
+Task | Note
 ------------ | -------------
 S.M.A.R.T check | Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
 
