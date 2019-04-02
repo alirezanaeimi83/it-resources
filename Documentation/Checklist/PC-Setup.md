@@ -1,8 +1,9 @@
 # PC Setup
 
 #### 1. Initial
-> - [ ] Disable monitor timeout and sleep
+> - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
+> - [ ] S.M.A.R.T check
 > - [ ] Create restore point
  
 #### 2. Updates
@@ -28,3 +29,4 @@
 > - [ ] Remove our tools
 > - [ ] Reset power settings
 > - [ ] Create restore point
+> - [ ] Write service summary
