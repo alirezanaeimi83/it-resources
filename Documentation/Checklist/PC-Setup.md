@@ -20,7 +20,7 @@
 > - [ ] Other
 > - [ ] Set program defaults
  
-#### 5. Optional 
+#### 5. Additional 
 > - [ ] Email
 > - [ ] Data Migration
 > - [ ] Recovery Drive
