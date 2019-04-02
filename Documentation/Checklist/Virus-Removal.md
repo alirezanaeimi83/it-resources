@@ -27,6 +27,6 @@
 > - [ ] Check security suite
 
 #### 7. Cleanup
-> - [ ] Remove our tools
+> - [ ] Remove tools
 > - [ ] Reset power settings
 > - [ ] Write service summary and recommendations
