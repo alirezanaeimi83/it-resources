@@ -21,7 +21,7 @@
 > - [ ] Reliability history
 > - [ ] Event Viewer
 
-#### 4. Optional
+#### 4. Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
