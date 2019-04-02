@@ -6,9 +6,8 @@
 > - [ ] Is backup required
 
 #### 2. Hardware
-First Header | Second Header
+Tasks | Note
 ------------ | -------------
-Content from cell 1 | Content from cell 2
 > - [ ] S.M.A.R.T check > Hard Drive Test Result: Pass/Fail | Résultat du test du disque dur : réussite/échec
 
 #### 3. Remediation
