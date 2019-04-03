@@ -1,7 +1,18 @@
 # PC Setup
 
 [Initial](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#1-initial)
+
 [Updates](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#2-updates)
+
+[Optimization](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#3-optimization)
+
+[Software Installation](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#4-software-installation)
+
+[Additional](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#5-additional)
+
+[Cleanup](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#6-cleanup)
+
+[Service Summary](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#service-summary)
 
 #### 1. Initial
 > - [ ] Disable monitor and sleep timeout
