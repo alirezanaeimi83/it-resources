@@ -68,8 +68,10 @@ System file repair completed
 #### 7. Cleanup
 > - [ ] Remove tools
 > - [ ] Reset power settings
+> - [ ] Create restore point
 > - [ ] Write service summary and recommendation
 
 ```
 Power settings reset to default
+Created restore point 'Virus Removal Completed'
 ```
