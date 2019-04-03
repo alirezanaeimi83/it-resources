@@ -2,13 +2,13 @@
 
 [Initial](#1-initial) <br>
 [Updates](#2-updates) <br>
-[Optimization]#3-optimization) <br>
+[Optimization](#3-optimization) <br>
 [Software Installation](#4-software-installation) <br>
 [Additional](#5-additional) <br>
 [Cleanup](#6-cleanup) <br>
 [Service Summary](#service-summary) <br>
 
-#### 1. Initial
+### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
 > - [ ] S.M.A.R.T check
@@ -20,7 +20,7 @@ Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/
 Restore point created: 'Setup Start' (restore here if there are any issues with setup)
 ```
  
-#### 2. Updates
+### Updates
 > - [ ] System Updates
 > - [ ] Driver Updates
 
@@ -31,7 +31,7 @@ Driver updates started
 Driver updates completed
 ```
 
-#### 3. Optimization
+### Optimization
 > - [ ] Remove bloatware
 > - [ ] Use CCleaner on file and registry
 
@@ -41,7 +41,7 @@ Device Optimization Started / Optimisation de l’appareil commencée
 Device Optimization Completed / Optimisation de l’appareil terminée
 ```
 
-#### 4. Software Installation
+### Software Installation
 > - [ ] Office Suite
 > - [ ] Security Suite
 > - [ ] Other
@@ -53,7 +53,7 @@ Microsoft Office - installed and activated
 Software Install Completed / Installation de logiciel terminée
 ```
  
-#### 5. Additional 
+### Additional 
 > - [ ] Email
 > - [ ] Data Migration
 > - [ ] Recovery Drive
@@ -66,7 +66,7 @@ Recovery Media Creation Started / Création d’un média de récupération comm
 Recovery Media Creation Completed / Création d’un média de récupération terminée
 ```
 
-#### 6. Cleanup
+### Cleanup
 > - [ ] Remove our tools
 > - [ ] Reset power settings
 > - [ ] Create restore point
@@ -77,7 +77,7 @@ Power settings reset to default
 Restore point created: 'Setup Complete'
 ```
 
-#### Service Summary:
+### Service Summary:
 * Removed bloatware that can cause system slowdown and delivers advertisement.\*
 * Windows updated to latest version avaliable for this unit (Build #).
 * Drivers updated to latest version provided by manufacture: <br>
