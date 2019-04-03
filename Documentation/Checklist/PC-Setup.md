@@ -70,7 +70,6 @@ Restore point created: 'Setup Complete'
 ```
 
 #### Service Summary:
-```
 * Removed bloatware that can cause system slowdown and delivers advertisement.\*
 * Windows updated to latest version avaliable for this unit (Build #).
 * Drivers updated to latest version provided by manufacture: <br>
@@ -86,4 +85,3 @@ Restore point created: 'Setup Complete'
  
  \*Bloatware Removed: <br>
  \<list items>
-```
