@@ -77,7 +77,7 @@ Service Summary:
 * Optimized registry and removed unessesary junk files to speed up boot time.
 * Installed requested software: <br>
 --- Microsoft Office (installed and activated). <br>
---- <Security> (installed and activated).
+--- \<Security> (installed and activated).
 * Email account(s) <account> setup with Microsoft Outlook.
 * Migrated user data from connected drive.
 * Created recovery drive.
