@@ -1,5 +1,8 @@
 # PC Setup
 
+[Initial](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#1-initial)
+[Updates](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#2-updates)
+
 #### 1. Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
