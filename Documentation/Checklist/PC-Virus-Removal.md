@@ -73,5 +73,5 @@ System file repair completed
 
 ```
 Power settings reset to default
-Created restore point 'Virus Removal Completed'
+Restore point created: 'Virus Removal Completed'
 ```
