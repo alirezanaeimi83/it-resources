@@ -9,7 +9,7 @@
 ```
 Unit serial matches ticket: Yes/No
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
-Restore point created 'Setup Start'
+Restore point created: 'Setup Start'
 ```
  
 #### 2. Updates
@@ -66,5 +66,5 @@ Recovery Media Creation Completed / Création d’un média de récupération te
 
 ```
 Power settings reset to default
-Restore point created 'Setup Complete'
+Restore point created: 'Setup Complete'
 ```
