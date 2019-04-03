@@ -1,8 +1,5 @@
 # PC Setup
 
-<details>
-<summary>Table of Contents</summary>
-<p>
 [Initial](#initial) <br>
 [Updates](#updates) <br>
 [Optimization](#optimization) <br>
@@ -10,8 +7,6 @@
 [Additional](#additional) <br>
 [Cleanup](#cleanup) <br>
 [Service Summary](#service-summary) <br>
-</p>
-</details>
 
 ### Initial
 > - [ ] Disable monitor and sleep timeout
