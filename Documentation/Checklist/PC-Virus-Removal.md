@@ -1,9 +1,9 @@
 # Virus Removal
 
 #### 1. Initial
-> - [ ] Disable monitor and sleep timeout       |
-> - [ ] Verify serial number <p align="center">| Unit serial matches ticket: Yes/No</p>
-> - [ ] Is backup required                      |
+> - [ ] `Disable monitor and sleep timeout --------`
+> - [ ] `Verify serial number ---------------------` Unit serial matches ticket: Yes/No
+> - [ ] `Is backup required -----------------------`
 
 #### 2. Hardware
 > - [ ] S.M.A.R.T check                         | Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
@@ -29,4 +29,4 @@
 #### 7. Cleanup
 > - [ ] Remove tools
 > - [ ] Reset power settings
-> - [ ] Write service summary and recommendations
+> - [ ] Write service summary and recommendation
