@@ -1,11 +1,11 @@
 # PC Setup
 
-[Initial](#1-initial) <br>
-[Updates](#2-updates) <br>
-[Optimization](#3-optimization) <br>
-[Software Installation](#4-software-installation) <br>
-[Additional](#5-additional) <br>
-[Cleanup](#6-cleanup) <br>
+[Initial](#initial) <br>
+[Updates](#updates) <br>
+[Optimization](#optimization) <br>
+[Software Installation](#software-installation) <br>
+[Additional](#additional) <br>
+[Cleanup](#cleanup) <br>
 [Service Summary](#service-summary) <br>
 
 ### Initial
