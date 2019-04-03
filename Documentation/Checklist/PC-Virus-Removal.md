@@ -14,7 +14,9 @@ Data Backup Completed / Sauvegarde des données terminée
 #### 2. Hardware
 > - [ ] S.M.A.R.T check
 
-`Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec`
+```
+Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
+```
 
 #### 3. Remediation
 > - [ ] Run rKill
@@ -68,4 +70,6 @@ System file repair completed
 > - [ ] Reset power settings
 > - [ ] Write service summary and recommendation
 
-`Power settings reset to default`
+```
+Power settings reset to default
+```
