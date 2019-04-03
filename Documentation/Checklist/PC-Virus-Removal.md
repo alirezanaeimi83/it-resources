@@ -2,7 +2,7 @@
 
 #### 1. Initial
 > - [ ] Disable monitor and sleep timeout       |
-> - [ ] Verify serial number                    | Unit serial matches ticket: Yes/No
+> - [ ] Verify serial number <p align="center">| Unit serial matches ticket: Yes/No</p>
 > - [ ] Is backup required                      |
 
 #### 2. Hardware
