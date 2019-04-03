@@ -5,26 +5,30 @@
 > - [ ] Verify serial number
 > - [ ] Is backup required
 
-`Unit serial matches ticket: Yes/No`
+```
+Unit serial matches ticket: Yes/No
+Data Backup Started / Sauvegarde des données commencée
+Data Backup Completed / Sauvegarde des données terminée
+```
 
 #### 2. Hardware
 > - [ ] S.M.A.R.T check
 
-`Hard Drive Test: Pass/Fail`
+`Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec`
 
 #### 3. Remediation
 > - [ ] Run rKill
-> - [ ] Malwarebytes clean
 > - [ ] Adwcleaner clean
+> - [ ] Malwarebytes clean
 > - [ ] Verification scan
 
 ```
-Security Remediation Started
-rKill - Threats Removed: <###>
-AdwCleaner - Threats Removed: <###>
-Malwarebytes - Threats Removed: <###>
-Verification - Threats Detected: <###>
-Security Remediation Completed
+Security Remediation Started / Nettoyage de sécurité commencé
+rKill - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
+AdwCleaner - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
+Malwarebytes - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
+Verification - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
+Security Remediation Completed / Nettoyage de sécurité terminé
 ```
 
 #### 4. Optimization
@@ -33,8 +37,8 @@ Security Remediation Completed
 
 ```
 Programs Removed: <list items>
-Device Optimization Started
-Device Optimization Completed
+Device Optimization Started / Optimisation de l’appareil commencée
+Device Optimization Completed / Optimisation de l’appareil terminée
 ```
 
 #### 5. Updates
@@ -42,17 +46,22 @@ Device Optimization Completed
 > - [ ] Driver updates
 
 ```
-System Updates Started
-System Updates Completed
+System Updates Started / Mises à jour du système commencées
+System Updates Completed / Mises à jour du système terminées
 Driver updates started
 Driver updates completed
 ```
 
 #### 6. Additional
+> - [ ] Repair system files
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
-`<Security Suite> is active, updated and expires in <###> days`
+```
+System file repair started
+System file repair completed
+<Security Suite> is active, updated and expires in <###> days
+```
 
 #### 7. Cleanup
 > - [ ] Remove tools
