@@ -69,7 +69,8 @@ Power settings reset to default
 Restore point created: 'Setup Complete'
 ```
 
-Service Summary:
+#### Service Summary:
+```
 * Removed bloatware that can cause system slowdown and delivers advertisement.\*
 * Windows updated to latest version avaliable for this unit (Build #).
 * Drivers updated to latest version provided by manufacture: <br>
@@ -85,3 +86,4 @@ Service Summary:
  
  \*Bloatware Removed: <br>
  \<list items>
+```
