@@ -82,7 +82,7 @@ Restore point created: 'Setup Complete'
 * Windows updated to latest version avaliable for this unit (Build #).
 * Drivers updated to latest version provided by manufacture: <br>
 --- BIOS, Graphics, Network, Audio.
-* Optimized registry and removed unessesary junk files to speed up boot time.
+* Optimized registry and removed unnecessary junk files to speed up boot time.
 * Installed requested software: <br>
 --- Microsoft Office (installed and activated). <br>
 --- \<Security> (installed and activated).
