@@ -3,9 +3,9 @@
 #### 1. Initial
 Task | Note
 ------------ | -------------
-Disable monitor and sleep timeout
-Verify serial number | Unit serial number matches ticket: Yes/No
-Is backup required
+`Disable monitor and sleep timeout`
+`Verify serial number` | Unit serial number matches ticket: Yes/No
+`Is backup required`
 
 #### 2. Hardware
 Task | Note
