@@ -9,7 +9,7 @@
 ```
 Unit serial matches ticket: Yes/No
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
-Restore point created: 'Setup Start'
+Restore point created: 'Setup Start' (restore here if there are any issues with setup)
 ```
  
 #### 2. Updates
@@ -68,3 +68,20 @@ Recovery Media Creation Completed / Création d’un média de récupération te
 Power settings reset to default
 Restore point created: 'Setup Complete'
 ```
+
+Service Summary:
+* Removed bloatware that can cause system slowdown and delivers advertisement.\*
+* Windows updated to latest version avaliable for this unit (Build #).
+* Drivers updated to latest version provided by manufacture: <br>
+--- BIOS, Graphics, Network, Audio.
+* Optimized registry and removed unessesary junk files to speed up boot time.
+* Installed requested software: <br>
+--- Microsoft Office (installed and activated). <br>
+--- <Security> (installed and activated).
+* Email account(s) <account> setup with Microsoft Outlook.
+* Migrated user data from connected drive.
+* Created recovery drive.
+* Created restore point 'Setup Complete'.
+ 
+ \*Bloatware Removed: <br>
+ \<list items>
