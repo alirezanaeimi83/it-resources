@@ -1,6 +1,6 @@
 # PC Setup
 
-[Initial](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#1-initial) <br>
+[Initial](#1-initial) <br>
 [Updates](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#2-updates) <br>
 [Optimization](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#3-optimization) <br>
 [Software Installation](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#4-software-installation) <br>
