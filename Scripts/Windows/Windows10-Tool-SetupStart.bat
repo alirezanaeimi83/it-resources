@@ -42,9 +42,7 @@ echo S.M.A.R.T. status
 wmic diskdrive get status 
 
 echo Create initial restore point
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Enable-ComputerRestore -Drive 'C:\'"
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "vssadmin Resize ShadowStorage /For=C: /On=C: /MaxSize=5%"
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Checkpoint-Computer -Description 'STAPLES - Setup Start'"
+Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Setup Started", 100, 12
 echo: 
 
 echo Start your setup!
