@@ -20,6 +20,7 @@
 > - [ ] Create restore point
 
 ```
+--- Initial ---
 Unit serial matches ticket: Yes/No
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
 Restore point created: 'Setup Start' (restore here if there are any issues with setup)
@@ -30,6 +31,7 @@ Restore point created: 'Setup Start' (restore here if there are any issues with 
 > - [ ] Driver Updates
 
 ```
+--- Updates ---
 System Updates Started / Mises à jour du système commencées
 System Updates Completed / Mises à jour du système terminées
 Driver updates started
@@ -41,6 +43,7 @@ Driver updates completed
 > - [ ] Use CCleaner on file and registry
 
 ```
+--- Optimization ---
 Bloatware Removed: <list items>
 Device Optimization Started / Optimisation de l’appareil commencée
 Device Optimization Completed / Optimisation de l’appareil terminée
@@ -53,6 +56,7 @@ Device Optimization Completed / Optimisation de l’appareil terminée
 > - [ ] Set program defaults
 
 ```
+--- Software Installation ---
 Software Install Started / Installation de logiciel commencée
 Microsoft Office - installed and activated
 Software Install Completed / Installation de logiciel terminée
@@ -64,6 +68,7 @@ Software Install Completed / Installation de logiciel terminée
 > - [ ] Recovery Drive
 
 ```
+--- Additional ---
 Email account(s) <account> setup
 Data Migration Started / Migration des données commencée
 Data Migration Completed / Migration des données terminée
@@ -78,6 +83,7 @@ Recovery Media Creation Completed / Création d’un média de récupération te
 > - [ ] Write service summary
 
 ```
+--- Cleanup ---
 Power settings reset to default
 Restore point created: 'Setup Complete'
 ```
