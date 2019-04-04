@@ -74,14 +74,17 @@ Driver updates completed
 ```
 
 ### Additional
-> - [ ] Repair system files
+> - [ ] Repair operating system
+> - [ ] Repair drive file system
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
 ```
 --- Additional ---
-System file repair started
-System file repair completed
+Operating system repair started
+Operating system repair completed
+Drive file system repair started
+Drive file system repair completed
 <Security Suite> is active, updated and expires in <###> days
 ```
 
@@ -96,20 +99,21 @@ System file repair completed
 Power settings reset to default
 Restore point created: 'Virus Removal Completed'
 ```
-### Customer Note:
+### Customer Note
 ```
 Service Summary:
 -------------------------
 Service Summary:
 • Malware threats removed: 18
 • Adware threats removed: 62
-• System files checked and corruption was repaired.
+• Operating system checked and corruption was repaired.
+• Drive file system checked and errors were repaired.
 • Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisement.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Windows updated to latest version avaliable for this unit (Version 1809).
 • Drivers updated to latest version provided by manufacture:
 --- BIOS, Graphics, Network, Audio.
-• McAfee is active and up to date, expires in 279 days
+• <Security> is active and up to date, expires in # days
 • Created restore point 'Virus Removal Complete'. The computer can be restored to this point if something goes wrong in the future.
 
 *Potentially Unwanted Programs Removed:
