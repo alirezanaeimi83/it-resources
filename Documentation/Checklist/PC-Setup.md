@@ -93,8 +93,6 @@ Service Summary:
 • Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.
 • Created recovery drive to help troubleshoot and fix problems with computer, even if it won’t start.
 ```
-\*Bloatware Removed: <br>
-
 | HP | Acer | Lenovo | Microsoft|
 | --- | --- | --- | --- |
 | \*Bloatware Removed<br>-----------------------<br>HP ePrint<br>HP JumpStart<br>Dolby Access<br>Dropbox Trial<br>Fitbit Coach<br>LinkedIn<br>Netflix<br>Phototastic Collage<br>WildTangent<br>Booking<br>Candy Crush Friends<br>Candy Crush Saga<br>Cooking Fever<br>Simple Solitaire | | | |
