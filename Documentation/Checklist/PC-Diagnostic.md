@@ -88,7 +88,7 @@ Windows Diagnostic Completed / Diagnostic de Windows terminé
 Power settings reset to default
 ```
 
-### Customer Note:
+### Customer Note
 ```
 Service Summary:
 • Hardware Test: Pass/Fail
