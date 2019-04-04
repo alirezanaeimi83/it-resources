@@ -100,10 +100,10 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
 REM --- Programs ---
-wmic product where name="'HP JumpStart Launch'" uninstall > nul
-wmic product where name="'HP JumpStart Bridge'" uninstall > nul
-wmic product where name="'HP Customer Experience Enhancements'" uninstall > nul
-wmic product where name="'HP Registration Service'" uninstall > nul
+wmic product where name="'HP JumpStart Launch'" call uninstall > nul
+wmic product where name="'HP JumpStart Bridge'" call uninstall > nul
+wmic product where name="'HP Customer Experience Enhancements'" call uninstall > nul
+wmic product where name="'HP Registration Service'" call uninstall > nul
 
 
 echo 7. Removing Lenovo Specific
