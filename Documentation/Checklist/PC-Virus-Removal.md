@@ -5,16 +5,16 @@
 [Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#maintenance) | 
 [Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
 
-[Initial](#1-initial) <br>
-[Hardware](#2-hardware) <br>
-[Remediation](#3-remediation) <br>
-[Optimization](#4-optimization) <br>
-[Updates](#5-updates) <br>
-[Additional](#6-additional) <br>
-[Cleanup](#7-cleanup)<br>
+[Initial](#initial) <br>
+[Hardware](#hardware) <br>
+[Remediation](#remediation) <br>
+[Optimization](#optimization) <br>
+[Updates](#updates) <br>
+[Additional](#additional) <br>
+[Cleanup](#cleanup)<br>
 [Customer Note](#customer-note) <br>
 
-### 1. Initial
+### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number
 > - [ ] Is backup required
@@ -25,14 +25,14 @@ Data Backup Started / Sauvegarde des données commencée
 Data Backup Completed / Sauvegarde des données terminée
 ```
 
-### 2. Hardware
+### Hardware
 > - [ ] S.M.A.R.T check
 
 ```
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
 ```
 
-### 3. Remediation
+### Remediation
 > - [ ] Run rKill
 > - [ ] Adwcleaner clean
 > - [ ] Malwarebytes clean
@@ -47,7 +47,7 @@ Verification - Security Threats Removed: insert number / Menaces de sécurité s
 Security Remediation Completed / Nettoyage de sécurité terminé
 ```
 
-### 4. Optimization
+### Optimization
 > - [ ] Remove PUPs
 > - [ ] CCleaner on file and registry
 
@@ -57,7 +57,7 @@ Device Optimization Started / Optimisation de l’appareil commencée
 Device Optimization Completed / Optimisation de l’appareil terminée
 ```
 
-### 5. Updates
+### Updates
 > - [ ] System updates
 > - [ ] Driver updates
 
@@ -68,7 +68,7 @@ Driver updates started
 Driver updates completed
 ```
 
-### 6. Additional
+### Additional
 > - [ ] Repair system files
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
@@ -79,7 +79,7 @@ System file repair completed
 <Security Suite> is active, updated and expires in <###> days
 ```
 
-### 7. Cleanup
+### Cleanup
 > - [ ] Remove tools
 > - [ ] Reset power settings
 > - [ ] Create restore point
