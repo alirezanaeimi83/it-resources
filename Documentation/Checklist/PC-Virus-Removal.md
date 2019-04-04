@@ -8,6 +8,7 @@
 [Initial](#initial) <br>
 [Hardware](#hardware) <br>
 [Remediation](#remediation) <br>
+[Windows](#windows) <br>
 [Optimization](#optimization) <br>
 [Updates](#updates) <br>
 [Additional](#additional) <br>
@@ -50,6 +51,17 @@ Verification - Security Threats Removed: insert number / Menaces de sécurité s
 Security Remediation Completed / Nettoyage de sécurité terminé
 ```
 
+### Windows
+> - [ ] Repair operating system
+> - [ ] Repair drive file system
+
+```
+Operating system repair started
+Operating system repair completed
+Drive file system repair started
+Drive file system repair completed
+```
+
 ### Optimization
 > - [ ] Remove PUPs
 > - [ ] CCleaner on file and registry
@@ -74,18 +86,12 @@ Driver updates completed
 ```
 
 ### Additional
-> - [ ] Repair operating system
-> - [ ] Repair drive file system
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
 ```
 --- Additional ---
-Operating system repair started
-Operating system repair completed
-Drive file system repair started
-Drive file system repair completed
-<Security Suite> is active, updated and expires in <###> days
+<Security Suite> is active, updated and expires in # days
 ```
 
 ### Cleanup
