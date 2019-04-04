@@ -97,4 +97,4 @@ Service Summary:
 
 | HP | Acer | Lenovo | Microsoft|
 | --- | --- | --- | --- |
-| HP ePrint<br>HP JumpStart<br>Dolby Access<br>Dropbox Trial<br>Fitbit Coach<br>LinkedIn<br>Netflix<br>Phototastic Collage<br>WildTangent<br>Booking<br>Candy Crush Friends<br>Candy Crush Saga<br>Cooking Fever<br>Simple Solitaire | | | |
+| \*Bloatware Removed<br>-----------------------<br>HP ePrint<br>HP JumpStart<br>Dolby Access<br>Dropbox Trial<br>Fitbit Coach<br>LinkedIn<br>Netflix<br>Phototastic Collage<br>WildTangent<br>Booking<br>Candy Crush Friends<br>Candy Crush Saga<br>Cooking Fever<br>Simple Solitaire | | | |
