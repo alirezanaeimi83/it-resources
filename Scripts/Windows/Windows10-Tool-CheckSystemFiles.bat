@@ -25,15 +25,19 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-REM Check system files for corruption
+REM Check File system and Operating system for errors
 REM Author: Justin Chapdelaine
-REM Version: 20190403.1
+REM Version: 20190404.1
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 REM Source:
 REM https://support.microsoft.com/en-ca/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system
 
-echo 1. Check system files
+echo 1. Check drive file system
+chkdsk
+echo:
+
+echo 1. Check operating system
 sfc /verifyonly
 echo:
 
