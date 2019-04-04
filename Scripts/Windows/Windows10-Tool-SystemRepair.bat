@@ -34,7 +34,7 @@ REM Source:
 REM https://support.microsoft.com/en-ca/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system
 
 echo 1. File system repair
-chkdsk /online
+chkdsk /scan
 echo:
 
 echo 2. Repair operating system image
