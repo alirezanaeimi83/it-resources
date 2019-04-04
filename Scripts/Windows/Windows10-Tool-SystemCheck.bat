@@ -37,7 +37,7 @@ echo 1. Check drive file system
 chkdsk
 echo:
 
-echo 1. Check operating system
+echo 2. Check operating system
 sfc /verifyonly
 echo:
 
