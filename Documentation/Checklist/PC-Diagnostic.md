@@ -19,6 +19,8 @@
 > - [ ] Is backup required
 
 ```
+Initial
+-------------------------
 Unit serial matches ticket: Yes/No
 Data Backup Started / Sauvegarde des données commencée
 Data Backup Completed / Sauvegarde des données terminée
@@ -29,6 +31,8 @@ Data Backup Completed / Sauvegarde des données terminée
 > - [ ] Hardware diagnostic
 
 ```
+Hardware
+-------------------------
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
 Hardware Tests Started / Tests du matériel commencés
 Hardware Tests Completed / Tests du matériel terminés
@@ -40,6 +44,8 @@ Hardware Test Result: Pass/Fail / Résultat des tests du matériel : réussit
 > - [ ] AdwCleaner scan
 
 ```
+Scan
+-------------------------
 Security Scan Started / Balayage de sécurité commencé
 AdwCleaner: Security Threats Detected: # / Menaces de sécurité détectées : #
 Malwarebytes: Security Threats Detected: # / Menaces de sécurité détectées : #
@@ -55,6 +61,8 @@ Security Scan Completed / Balayage de sécurité terminé
 > - [ ] Event Viewer
 
 ```
+Windows
+-------------------------
 Windows Diagnostic Started / Diagnostic de Windows commencé
 Disk Error Test Result: Pass/Fail
 Windows System File Test Result: Pass/Fail
@@ -70,6 +78,8 @@ Windows Diagnostic Completed / Diagnostic de Windows terminé
 > - [ ] Check security suite
 
 ```
+Additional
+-------------------------
 <Security Suite> is active, updated and expires in # days
 ```
 
@@ -79,6 +89,8 @@ Windows Diagnostic Completed / Diagnostic de Windows terminé
 > - [ ] Write service summary and recommendations\
 
 ```
+Cleanup
+-------------------------
 Power settings reset to default
 ```
 
