@@ -25,19 +25,23 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-REM Repair system image and system files
+REM Repair file system and operating system
 REM Author: Justin Chapdelaine
-REM Version: 20190330.1
+REM Version: 20190404.1
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 REM Source:
 REM https://support.microsoft.com/en-ca/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system
 
-echo 1. Repair system image
+echo 1. File system repair
+chkdsk /online
+echo:
+
+echo 2. Repair operating system image
 DISM.exe /Online /Cleanup-image /Restorehealth
 echo:
 
-echo 2. Repair system files
+echo 3. Repair operating system
 sfc /scannow
 echo:
 
