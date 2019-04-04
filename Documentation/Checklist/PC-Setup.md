@@ -78,18 +78,21 @@ Restore point created: 'Setup Complete'
 ```
 
 ### Service Summary:
-* Removed bloatware that can cause system slowdown and delivers advertisement.\*
-* Windows updated to latest version avaliable for this unit (Build #).
-* Drivers updated to latest version provided by manufacture: <br>
+```
+• Removed bloatware that can cause system slowdown and delivers advertisement.\*
+• Windows updated to latest version avaliable for this unit (Version 1809).
+• Drivers updated to latest version provided by manufacture: <br>
 --- BIOS, Graphics, Network, Audio.
-* Optimized registry and removed unnecessary junk files to speed up boot time.
-* Installed requested software: <br>
+• Installed requested software: <br>
 --- Microsoft Office (installed and activated). <br>
 --- \<Security> (installed and activated).
-* Email account(s) <account> setup with Microsoft Outlook.
-* Migrated user data from connected drive.
-* Created recovery drive.
-* Created restore point 'Setup Complete'.
- 
- \*Bloatware Removed: <br>
- \<list items>
+• Email account(s) <account> setup with Microsoft Outlook.
+• Optimized registry and removed unnecessary junk files to speed up boot time.
+• Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.
+• Created recovery drive to help troubleshoot and fix problems with computer, even if it won’t start.
+```
+\*Bloatware Removed: <br>
+
+| HP | Acer | Lenovo | Microsoft|
+| --- | --- | --- | --- |
+| HP ePrint<br>HP JumpStart<br>Dolby Access<br>Dropbox Trial<br>Fitbit Coach<br>LinkedIn<br>Netflix<br>Phototastic Collage<br>WildTangent<br>Booking<br>Candy Crush Friends<br>Candy Crush Saga<br>Cooking Fever<br>Simple Solitaire | | | |
