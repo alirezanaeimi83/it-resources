@@ -5,20 +5,28 @@
 [Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#maintenance) | 
 [Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
 
-#### 1. Initial
+[Initial](#initial) <br>
+[Hardware](#hardware) <br>
+[Scan](#scan) <br>
+[Windows](#windows) <br>
+[Additional](#additional) <br>
+[Cleanup](#cleanup)<br>
+[Customer Note](#customer-note) <br>
+
+#### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
 > - [ ] Is backup required
 
-#### 2. Hardware
+#### Hardware
 > - [ ] S.M.A.R.T check
 > - [ ] Quick hardware diagnostic
 
-#### 3. Malware
+#### Scan
 > - [ ] Malwarebytes scan
 > - [ ] AdwCleaner scan
 
-#### 4. Windows
+#### Windows
 > - [ ] Check disk
 > - [ ] System file check
 > - [ ] Device manager
@@ -26,12 +34,29 @@
 > - [ ] Reliability history
 > - [ ] Event Viewer
 
-#### 4. Additional
+#### Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
-#### 5. Cleanup
+#### Cleanup
 > - [ ] Remove our tools
 > - [ ] Reset power settings
 > - [ ] Write service summary and recommendations
 
+### Customer Note:
+```
+Service Summary:
+• Hardware Test: Pass/Fail
+• Malware Test: #
+• System File Test: Pass/Fail
+• System Partition Test: Pass/Fail
+• Device Driver Test: Pass/Fail
+• Startup Files: Pass/Fail
+• Reliability History / Event Viewer: 
+--- Event
+--- Event
+• <Security> is active and up to date, expires in #
+
+Recommendation:
+1. <type custom recommendation>
+```
