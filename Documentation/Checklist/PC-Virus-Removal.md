@@ -20,6 +20,7 @@
 > - [ ] Is backup required
 
 ```
+--- Initial ---
 Unit serial matches ticket: Yes/No
 Data Backup Started / Sauvegarde des données commencée
 Data Backup Completed / Sauvegarde des données terminée
@@ -29,6 +30,7 @@ Data Backup Completed / Sauvegarde des données terminée
 > - [ ] S.M.A.R.T check
 
 ```
+--- Hardware ---
 Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
 ```
 
@@ -39,6 +41,7 @@ Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/
 > - [ ] Verification scan
 
 ```
+--- Remediation ---
 Security Remediation Started / Nettoyage de sécurité commencé
 rKill - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
 AdwCleaner - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
@@ -52,6 +55,7 @@ Security Remediation Completed / Nettoyage de sécurité terminé
 > - [ ] CCleaner on file and registry
 
 ```
+--- Optimization ---
 Programs Removed: <list items>
 Device Optimization Started / Optimisation de l’appareil commencée
 Device Optimization Completed / Optimisation de l’appareil terminée
@@ -62,6 +66,7 @@ Device Optimization Completed / Optimisation de l’appareil terminée
 > - [ ] Driver updates
 
 ```
+--- Updates ---
 System Updates Started / Mises à jour du système commencées
 System Updates Completed / Mises à jour du système terminées
 Driver updates started
@@ -74,6 +79,7 @@ Driver updates completed
 > - [ ] Check security suite
 
 ```
+--- Additional ---
 System file repair started
 System file repair completed
 <Security Suite> is active, updated and expires in <###> days
@@ -86,6 +92,7 @@ System file repair completed
 > - [ ] Write service summary and recommendation
 
 ```
+--- Cleanup ---
 Power settings reset to default
 Restore point created: 'Virus Removal Completed'
 ```
