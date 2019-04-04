@@ -9,6 +9,8 @@
 [Hardware](#hardware) <br>
 [Scan](#scan) <br>
 [Windows](#windows) <br>
+[Optimization](#optimization) <br>
+[Updates](#updates) <br>
 [Additional](#additional) <br>
 [Cleanup](#cleanup)<br>
 [Customer Note](#customer-note) <br>
@@ -45,6 +47,17 @@ AdwCleaner: Security Threats Removed: #
 Security Scan Completed
 ```
 
+### Windows
+> - [ ] Repair operating system
+> - [ ] Repair drive file system
+
+```
+Operating system repair started
+Operating system repair completed
+Drive file system repair started
+Drive file system repair completed
+```
+
 ### Optimization
 > - [ ] Remove PUPs
 > - [ ] CCleaner on file and registry
@@ -69,17 +82,11 @@ Driver updates completed
 ```
 
 ### Additional
-> - [ ] Repair operating system
-> - [ ] Repair drive file system
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
 ```
 --- Additional ---
-Operating system repair started
-Operating system repair completed
-Drive file system repair started
-Drive file system repair completed
 <Security Suite> is active, updated and expires in # days
 ```
 
