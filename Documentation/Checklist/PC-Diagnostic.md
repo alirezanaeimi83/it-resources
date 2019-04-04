@@ -18,30 +18,69 @@
 > - [ ] Verify serial number 
 > - [ ] Is backup required
 
+```
+Unit serial matches ticket: Yes/No
+Data Backup Started / Sauvegarde des données commencée
+Data Backup Completed / Sauvegarde des données terminée
+```
+
 #### Hardware
 > - [ ] S.M.A.R.T check
-> - [ ] Quick hardware diagnostic
+> - [ ] Hardware diagnostic
+
+```
+Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
+Hardware Tests Started / Tests du matériel commencés
+Hardware Tests Completed / Tests du matériel terminés
+Hardware Test Result: Pass/Fail / Résultat des tests du matériel : réussite/échec
+```
 
 #### Scan
 > - [ ] Malwarebytes scan
 > - [ ] AdwCleaner scan
 
+```
+Security Scan Started / Balayage de sécurité commencé
+AdwCleaner: Security Threats Detected: # / Menaces de sécurité détectées : #
+Malwarebytes: Security Threats Detected: # / Menaces de sécurité détectées : #
+Security Scan Completed / Balayage de sécurité terminé
+```
+
 #### Windows
 > - [ ] Check disk
 > - [ ] System file check
-> - [ ] Device manager
+> - [ ] Device drivers
 > - [ ] System configuration (msconfig)
 > - [ ] Reliability history
 > - [ ] Event Viewer
+
+```
+Windows Diagnostic Started / Diagnostic de Windows commencé
+Disk Error Test Result: Pass/Fail
+Windows System File Test Result: Pass/Fail
+Device Driver Test: Pass/Fail
+System Configuration Test: Pass/Fail
+Reliability History Test: Pass/Fail
+Event Viewer Test: Pass/Fail
+Windows Diagnostic Completed / Diagnostic de Windows terminé
+```
 
 #### Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
 
+```
+<Security Suite> is active, updated and expires in # days
+```
+
 #### Cleanup
 > - [ ] Remove our tools
 > - [ ] Reset power settings
-> - [ ] Write service summary and recommendations
+> - [ ] Write service summary and recommendations\
+
+```
+Power settings reset to default
+```
 
 ### Customer Note:
 ```
