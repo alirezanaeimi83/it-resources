@@ -41,8 +41,8 @@ Hardware test result: Pass/Fail
 
 ```
 --- Security Scan Started ---
-AdwCleaner: Security Threats Detected: #
-Malwarebytes: Security Threats Detected: #
+AdwCleaner: Security threats detected: #
+Malwarebytes: Security threats detected: #
 --- Security Scan Completed ---
 ```
 
