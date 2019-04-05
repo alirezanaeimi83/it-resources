@@ -84,7 +84,7 @@ Event Viewer check: Pass/Fail
 --- Cleanup Started ---
 Power settings reset to default
 Removed remote tools
---- Cleanup Completed
+--- Cleanup Completed ---
 ```
 
 ### Customer Note
