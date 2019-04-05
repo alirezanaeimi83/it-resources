@@ -94,7 +94,7 @@ Recovery media creation completed
 Power settings reset to default
 Removed remote tools
 Restore point created: 'Setup Complete'
---- Cleanup Completed
+--- Cleanup Completed ---
 ```
 
 ### Customer Note:
