@@ -96,7 +96,7 @@ Driver updates completed
 --- Cleanup Started ---
 Power settings reset to default
 Removed remote tools
---- Cleanup Completed
+--- Cleanup Completed ---
 ```
 
 ### Customer Note
