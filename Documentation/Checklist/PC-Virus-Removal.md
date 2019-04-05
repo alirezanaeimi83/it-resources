@@ -103,7 +103,7 @@ Driver updates completed
 Power settings reset to default
 Removed remote tools
 Restore point created: 'Virus Removal Complete'
---- Cleanup Completed
+--- Cleanup Completed ---
 ```
 ### Customer Note
 ```
