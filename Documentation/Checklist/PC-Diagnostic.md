@@ -16,37 +16,34 @@
 #### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
-> - [ ] Is backup required
+> - [ ] S.M.A.R.T check
 
 ```
---- Initial---
+--- Initialization Started ---
 Unit serial matches ticket: Yes/No
-Data Backup Started / Sauvegarde des données commencée
-Data Backup Completed / Sauvegarde des données terminée
+Disabled monitor and sleep timeout
+Hard Drive S.M.A.R.T test: Pass/Fail 
+--- Initialization Completed ---
 ```
 
 #### Hardware
-> - [ ] S.M.A.R.T check
 > - [ ] Hardware diagnostic
 
 ```
---- Hardware ---
-Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
-Hardware Tests Started / Tests du matériel commencés
-Hardware Tests Completed / Tests du matériel terminés
-Hardware Test Result: Pass/Fail / Résultat des tests du matériel : réussite/échec
+--- Hardware Test Started ---
+Hardware test result: Pass/Fail
+--- Hardware Test Completed ---
 ```
 
 #### Scan
-> - [ ] Malwarebytes scan
 > - [ ] AdwCleaner scan
+> - [ ] Malwarebytes scan
 
 ```
---- Scan ---
-Security Scan Started / Balayage de sécurité commencé
-AdwCleaner: Security Threats Detected: # / Menaces de sécurité détectées : #
-Malwarebytes: Security Threats Detected: # / Menaces de sécurité détectées : #
-Security Scan Completed / Balayage de sécurité terminé
+--- Security Scan Started ---
+AdwCleaner: Security Threats Detected: #
+Malwarebytes: Security Threats Detected: #
+--- Security Scan Completed ---
 ```
 
 #### Windows
@@ -58,15 +55,14 @@ Security Scan Completed / Balayage de sécurité terminé
 > - [ ] Event Viewer
 
 ```
---- Windows ---
-Windows Diagnostic Started / Diagnostic de Windows commencé
-Disk Error Test Result: Pass/Fail
-Windows System File Test Result: Pass/Fail
-Device Driver Test: Pass/Fail
-System Configuration Test: Pass/Fail
-Reliability History Test: Pass/Fail
-Event Viewer Test: Pass/Fail
-Windows Diagnostic Completed / Diagnostic de Windows terminé
+--- System Diagnostic Started ---
+Disk file system test result: Pass/Fail
+Windows integrity test result: Pass/Fail
+Device driver check: Pass/Fail
+System configuration check: Pass/Fail
+Reliability History check: Pass/Fail
+Event Viewer check: Pass/Fail
+--- System Diagnostic Completed ---
 ```
 
 #### Additional
@@ -74,8 +70,9 @@ Windows Diagnostic Completed / Diagnostic de Windows terminé
 > - [ ] Check security suite
 
 ```
---- Additional ---
+--- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+--- Customization Completed ---
 ```
 
 #### Cleanup
@@ -84,19 +81,22 @@ Windows Diagnostic Completed / Diagnostic de Windows terminé
 > - [ ] Write service summary and recommendations\
 
 ```
---- Cleanup ---
+--- Cleanup Started ---
 Power settings reset to default
+Removed remote tools
+--- Cleanup Completed
 ```
 
 ### Customer Note
 ```
 Service Summary:
 • Hardware Test: Pass/Fail
-• Malware Test: #
-• System File Test: Pass/Fail
-• System Partition Test: Pass/Fail
-• Device Driver Test: Pass/Fail
-• Startup Files: Pass/Fail
+• Malware Threats Found: #
+• Adware Threats Found: #
+• Disk File System Test: Pass/Fail
+• Windows Integrity Test: Pass/Fail
+• Device Driver Check: Pass/Fail
+• System Configuration Check: Pass/Fail
 • Reliability History / Event Viewer: 
 --- Event
 --- Event
