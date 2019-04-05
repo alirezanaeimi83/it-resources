@@ -20,10 +20,12 @@
 > - [ ] Create restore point
 
 ```
---- Initial ---
+--- Initialization Started ---
 Unit serial matches ticket: Yes/No
-Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
-Restore point created: 'Setup Start' (restore here if there are any issues with setup)
+Disabled monitor and sleep timeout
+Hard Drive S.M.A.R.T test: Pass/Fail 
+Restore point created: 'Setup Start'
+--- Initialization Completed ---
 ```
  
 ### Updates
@@ -31,11 +33,12 @@ Restore point created: 'Setup Start' (restore here if there are any issues with 
 > - [ ] Driver Updates
 
 ```
---- Updates ---
-System Updates Started / Mises à jour du système commencées
-System Updates Completed / Mises à jour du système terminées
+--- Updates Started ---
+System updates started
+System updates completed
 Driver updates started
 Driver updates completed
+--- Updates Completed ---
 ```
 
 ### Optimization
@@ -43,10 +46,12 @@ Driver updates completed
 > - [ ] Use CCleaner on file and registry
 
 ```
---- Optimization ---
-Bloatware Removed: <list items>
-Device Optimization Started / Optimisation de l’appareil commencée
-Device Optimization Completed / Optimisation de l’appareil terminée
+--- Optimization Started ---
+Bloatware removal started
+Bloatware removal completed
+Device optimization started
+Device optimization completed
+--- Optimization Completed
 ```
 
 ### Software Installation
@@ -56,10 +61,11 @@ Device Optimization Completed / Optimisation de l’appareil terminée
 > - [ ] Set program defaults
 
 ```
---- Software Installation ---
-Software Install Started / Installation de logiciel commencée
-Microsoft Office - installed and activated
-Software Install Completed / Installation de logiciel terminée
+--- Software Installation Started---
+Microsoft Office: installed and activated
+Security: installed and activation
+Installed programs set as default
+--- Software Installation Completed ---
 ```
  
 ### Additional 
@@ -68,12 +74,13 @@ Software Install Completed / Installation de logiciel terminée
 > - [ ] Recovery Drive
 
 ```
---- Additional ---
+--- Customization Started ---
 Email account(s) <account> setup
-Data Migration Started / Migration des données commencée
-Data Migration Completed / Migration des données terminée
-Recovery Media Creation Started / Création d’un média de récupération commencée
-Recovery Media Creation Completed / Création d’un média de récupération terminée
+Data migration started
+Data migration completed
+Recovery media creation started
+Recovery media creation completed
+--- Customization Completed ---
 ```
 
 ### Cleanup
@@ -83,22 +90,24 @@ Recovery Media Creation Completed / Création d’un média de récupération te
 > - [ ] Write service summary
 
 ```
---- Cleanup ---
+--- Cleanup Started ---
 Power settings reset to default
+Removed remote tools
 Restore point created: 'Setup Complete'
+--- Cleanup Completed
 ```
 
 ### Customer Note:
 ```
 Service Summary:
 -------------------------
-• Removed bloatware that can cause system slowdown and delivers advertisement.\*
+• Removed bloatware that can cause system slowdown and delivers advertisement.*
 • Windows updated to latest version avaliable for this unit (Version 1809).
-• Drivers updated to latest version provided by manufacture: <br>
+• Drivers updated to latest version provided by manufacture:
 --- BIOS, Graphics, Network, Audio.
-• Installed requested software: <br>
---- Microsoft Office (installed and activated). <br>
---- \<Security> (installed and activated).
+• Installed requested software:
+--- Microsoft Office (installed and activated).
+--- <Security> (installed and activated).
 • Email account(s) <account> setup with Microsoft Outlook.
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.
