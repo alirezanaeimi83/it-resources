@@ -90,6 +90,7 @@ Removed remote tools
 ### Customer Note
 ```
 Service Summary:
+-------------------------
 • Hardware Test: Pass/Fail
 • Malware Threats Found: #
 • Adware Threats Found: #
@@ -103,5 +104,6 @@ Service Summary:
 • <Security> is active and up to date, expires in #
 
 Recommendation:
+-------------------------
 1. <type custom recommendation>
 ```
