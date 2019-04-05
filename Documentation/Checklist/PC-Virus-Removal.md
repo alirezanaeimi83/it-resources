@@ -18,21 +18,14 @@
 ### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number
-> - [ ] Is backup required
-
-```
---- Initial ---
-Unit serial matches ticket: Yes/No
-Data Backup Started / Sauvegarde des données commencée
-Data Backup Completed / Sauvegarde des données terminée
-```
-
-### Hardware
 > - [ ] S.M.A.R.T check
 
 ```
---- Hardware ---
-Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/échec
+--- Initialization Started ---
+Unit serial matches ticket: Yes/No
+Disabled monitor and sleep timeout
+Hard Drive S.M.A.R.T test: Pass/Fail 
+--- Initialization Completed ---
 ```
 
 ### Remediation
@@ -42,13 +35,12 @@ Hard Drive Test Result: Pass/Fail / Résultat du test du disque dur : réussite/
 > - [ ] Verification scan
 
 ```
---- Remediation ---
-Security Remediation Started / Nettoyage de sécurité commencé
-rKill - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
-AdwCleaner - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
-Malwarebytes - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
-Verification - Security Threats Removed: insert number / Menaces de sécurité supprimées : insérer le nombre
-Security Remediation Completed / Nettoyage de sécurité terminé
+--- Security Remediation Started ---
+rKill: Security threats disabled: #
+AdwCleaner: Security threats removed: #
+Malwarebytes: Security threats removed: #
+Verification: Security threats remaining: #
+--- Security Remediation Completed ---
 ```
 
 ### Windows
@@ -56,11 +48,12 @@ Security Remediation Completed / Nettoyage de sécurité terminé
 > - [ ] Repair drive file system
 
 ```
---- Windows ---
-Operating system repair started
-Operating system repair completed
-Drive file system repair started
-Drive file system repair completed
+--- System Repair Started ---
+Disk file system repair started
+Windows integrity repair started
+Disk file system repair result: Pass/Fail
+Windows integrity repair result: Pass/Fail
+--- System Repair Completed ---
 ```
 
 ### Optimization
@@ -68,10 +61,12 @@ Drive file system repair completed
 > - [ ] CCleaner on file and registry
 
 ```
---- Optimization ---
-Programs Removed: <list items>
-Device Optimization Started / Optimisation de l’appareil commencée
-Device Optimization Completed / Optimisation de l’appareil terminée
+--- Optimization Started ---
+Potentially unwanted programs removed:
+---
+Device optimization started
+Device optimization completed
+--- Optimization Completed
 ```
 
 ### Updates
@@ -79,11 +74,12 @@ Device Optimization Completed / Optimisation de l’appareil terminée
 > - [ ] Driver updates
 
 ```
---- Updates ---
-System Updates Started / Mises à jour du système commencées
-System Updates Completed / Mises à jour du système terminées
+--- Updates Started ---
+System updates started
+System updates completed
 Driver updates started
 Driver updates completed
+--- Updates Completed ---
 ```
 
 ### Additional
@@ -91,8 +87,9 @@ Driver updates completed
 > - [ ] Check security suite
 
 ```
---- Additional ---
+--- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+--- Customization Completed ---
 ```
 
 ### Cleanup
@@ -102,9 +99,11 @@ Driver updates completed
 > - [ ] Write service summary and recommendation
 
 ```
---- Cleanup ---
+--- Cleanup Started ---
 Power settings reset to default
-Restore point created: 'Virus Removal Completed'
+Removed remote tools
+Restore point created: 'Virus Removal Complete'
+--- Cleanup Completed
 ```
 ### Customer Note
 ```
@@ -113,8 +112,8 @@ Service Summary:
 Service Summary:
 • Malware threats removed: 18
 • Adware threats removed: 62
-• Operating system checked and corruption was repaired.
-• Drive file system checked and errors were repaired.
+• Disk file system checked and errors were repaired.
+• Windows integrity checked and corruption was repaired.
 • Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisement.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Windows updated to latest version avaliable for this unit (Version 1809).
@@ -124,7 +123,5 @@ Service Summary:
 • Created restore point 'Virus Removal Complete'. The computer can be restored to this point if something goes wrong in the future.
 
 *Potentially Unwanted Programs Removed:
-- Driver Easy
-- SlimCleaner Plus
-- WinZip (trial expired)
+- <list programs>
 ```
