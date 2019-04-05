@@ -6,7 +6,6 @@
 [Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
 
 [Initial](#initial) <br>
-[Hardware](#hardware) <br>
 [Scan](#scan) <br>
 [Windows](#windows) <br>
 [Optimization](#optimization) <br>
@@ -18,21 +17,14 @@
 ### Initial
 > - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
-> - [ ] Is backup required
-
-```
---- Initial---
-Unit serial matches ticket: Yes/No
-Data Backup Started
-Data Backup Completed
-```
-
-### Hardware
 > - [ ] S.M.A.R.T check
 
 ```
---- Hardware ---
-Hard Drive Test Result: Pass/Fail
+--- Initialization Started ---
+Unit serial matches ticket: Yes/No
+Disabled monitor and sleep timeout
+Hard Drive S.M.A.R.T test: Pass/Fail 
+--- Initialization Completed ---
 ```
 
 ### Scan
@@ -40,11 +32,10 @@ Hard Drive Test Result: Pass/Fail
 > - [ ] AdwCleaner clean
 
 ```
---- Scan ---
-Security Scan Started
-Malwarebytes: Security Threats Detected: #
-AdwCleaner: Security Threats Removed: #
-Security Scan Completed
+--- Security Scan Started ---
+AdwCleaner: Security threats detected: #
+Malwarebytes: Security threats removed: #
+--- Security Scan Completed ---
 ```
 
 ### Windows
@@ -52,11 +43,12 @@ Security Scan Completed
 > - [ ] Repair drive file system
 
 ```
---- Windows ---
-Operating system repair started
-Operating system repair completed
-Drive file system repair started
-Drive file system repair completed
+--- System Repair Started ---
+Disk file system repair started
+Windows integrity repair started
+Disk file system repair result: Pass/Fail
+Windows integrity repair result: Pass/Fail
+--- System Repair Completed ---
 ```
 
 ### Optimization
@@ -64,10 +56,12 @@ Drive file system repair completed
 > - [ ] CCleaner on file and registry
 
 ```
---- Optimization ---
-Programs Removed: <list items>
-Device Optimization Started / Optimisation de l’appareil commencée
-Device Optimization Completed / Optimisation de l’appareil terminée
+--- Optimization Started ---
+Potentially unwanted programs removal started
+Potentially unwanted programs removal completed
+Device optimization started
+Device optimization completed
+--- Optimization Completed
 ```
 
 ### Updates
@@ -75,11 +69,12 @@ Device Optimization Completed / Optimisation de l’appareil terminée
 > - [ ] Driver updates
 
 ```
---- Updates ---
-System Updates Started / Mises à jour du système commencées
-System Updates Completed / Mises à jour du système terminées
+--- Updates Started ---
+System updates started
+System updates completed
 Driver updates started
 Driver updates completed
+--- Updates Completed ---
 ```
 
 ### Additional
@@ -87,8 +82,9 @@ Driver updates completed
 > - [ ] Check security suite
 
 ```
---- Additional ---
+--- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+--- Customization Completed ---
 ```
 
 ### Cleanup
@@ -97,23 +93,27 @@ Driver updates completed
 > - [ ] Write service summary and recommendations
 
 ```
---- Cleanup ---
+--- Cleanup Started ---
 Power settings reset to default
+Removed remote tools
+--- Cleanup Completed
 ```
 
 ### Customer Note
 ```
 Service Summary:
+-------------------------
 • Malware threats detected: #
 • Adware threats removed: #
+• Windows integrity checked and corruption was repaired.
+• Disk file system checked and errors were repaired.
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Windows updated to latest version avaliable for this unit (Version 1809).
 • Drivers updated to latest version provided by manufacture:
 --- BIOS, Graphics, Network, Audio.
-• Operating system checked and corruption was repaired.
-• Drive file system checked and errors were repaired.
 • <Security> is active and up to date, expires in #
 
 Recommendation:
+-------------------------
 1. <type custom recommendation>
 ```
