@@ -33,8 +33,8 @@ Hard Drive S.M.A.R.T test: Pass/Fail
 
 ```
 --- Security Scan Started ---
-AdwCleaner: Security threats detected: #
-Malwarebytes: Security threats removed: #
+AdwCleaner: Security threats removed: #
+Malwarebytes: Security threats detected: #
 --- Security Scan Completed ---
 ```
 
