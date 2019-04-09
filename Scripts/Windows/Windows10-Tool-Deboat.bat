@@ -114,7 +114,6 @@ echo 9. Removing Asus Specific
 REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
-
 REM --- Programs ---
 wmic product where name="ASUS Hello" call uninstall
 wmic product where name="ASUS Device Activation" call uninstall
