@@ -40,7 +40,7 @@ echo Disable Suggestion In Start
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager /v SubscribedContent-338388Enabled /t REG_DWORD /d 0 /f
 echo:
 
-echo This may take a few minutes, there will be 9 steps
+echo This may take a few minutes, there will be 10 steps
 echo:
 
 echo 1. Removing Utilities
@@ -58,6 +58,7 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Evernote* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *DropboxOEM* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *RemoteDesktop* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *McAfeeSecurity* | Remove-AppxPackage"
 
 echo 2. Removing Games
 REM --- Metro Apps ---
@@ -100,17 +101,27 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
 REM --- Programs ---
-wmic product where name="'HP JumpStart Launch'" call uninstall > nul
-wmic product where name="'HP JumpStart Bridge'" call uninstall > nul
-wmic product where name="'HP Customer Experience Enhancements'" call uninstall > nul
-wmic product where name="'HP Registration Service'" call uninstall > nul
-
+wmic product where name="HP JumpStart Launch" call uninstall
+wmic product where name="HP JumpStart Bridge" call uninstall
+wmic product where name="HP Customer Experience Enhancements" call uninstall
+wmic product where name="HP Registration Service" call uninstall
 
 echo 7. Removing Lenovo Specific
 
 echo 8. Removing Microsoft (Surface) Specific
 
-echo 9. Unpining Non-Installed Bloatware (incomplete)
+echo 9. Removing Asus Specific
+REM --- Metro Apps ---
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
+
+REM --- Programs ---
+wmic product where name="ASUS Hello" call uninstall
+wmic product where name="ASUS Device Activation" call uninstall
+wmic product where name="ASUS GiftBox Service" call uninstall
+wmic product where name="ASUS ZenAnywhere" call uninstall
+
+echo 10. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
 echo Bloatware removal complete!
