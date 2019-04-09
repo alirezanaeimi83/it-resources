@@ -101,10 +101,10 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
 REM --- Programs ---
-wmic product where name="HP JumpStart Launch" call uninstall
-wmic product where name="HP JumpStart Bridge" call uninstall
-wmic product where name="HP Customer Experience Enhancements" call uninstall
-wmic product where name="HP Registration Service" call uninstall
+wmic product where name="HP JumpStart Launch" call uninstall >nul
+wmic product where name="HP JumpStart Bridge" call uninstall >nul
+wmic product where name="HP Customer Experience Enhancements" call uninstall >nul
+wmic product where name="HP Registration Service" call uninstall >nul
 
 echo 7. Removing Lenovo Specific
 
@@ -115,10 +115,10 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
 REM --- Programs ---
-wmic product where name="ASUS Hello" call uninstall
-wmic product where name="ASUS Device Activation" call uninstall
-wmic product where name="ASUS GiftBox Service" call uninstall
-wmic product where name="ASUS ZenAnywhere" call uninstall
+wmic product where name="ASUS Hello" call uninstall >nul
+wmic product where name="ASUS Device Activation" call uninstall >nul
+wmic product where name="ASUS GiftBox Service" call uninstall >nul
+wmic product where name="ASUS ZenAnywhere" call uninstall >nul
 
 echo 10. Unpining Non-Installed Bloatware (incomplete)
 
