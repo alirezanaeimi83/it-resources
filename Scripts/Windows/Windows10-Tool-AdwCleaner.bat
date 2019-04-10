@@ -9,6 +9,6 @@ echo Downloading AdwCleaner
 bitsadmin /transfer "Downloading AdwCleaner..." /download /priority normal https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe C:\STS\Programs\adw.exe
 
 echo Start AdwCleaner
-start C:\STS\Programs\rk.exe
+start C:\STS\Programs\adw.exe
 
 PAUSE
