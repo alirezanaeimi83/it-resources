@@ -2,7 +2,7 @@
 
 REM Install Norton Premium
 REM Author: Justin Chapdelaine
-REM Version: 20190409
+REM Version: 20190409.2
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 echo Installing Norton Security Premium version Latest
