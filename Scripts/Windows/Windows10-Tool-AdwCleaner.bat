@@ -7,8 +7,10 @@ REM Source: https://github.com/justinchapdelaine/IT-Resources
 
 echo Downloading AdwCleaner
 bitsadmin /transfer "Downloading AdwCleaner..." /download /priority normal https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe C:\STS\Programs\adw.exe
+echo:
 
 echo Start AdwCleaner
 start C:\STS\Programs\adw.exe
+echo:
 
 PAUSE
