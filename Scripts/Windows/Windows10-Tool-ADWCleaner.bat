@@ -1,12 +1,14 @@
 @echo off 
 
-REM Download and run ADWCleaner
+REM Download and run AdwCleaner
 REM Author: Justin Chapdelaine
-REM Version: 20190330.1
+REM Version: 20190409.2
 REM Source: https://github.com/justinchapdelaine/IT-Resources
 
-echo Downloading ADWCleaner
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "& {$P = $env:TEMP + '\adw.exe'; Invoke-WebRequest 'https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe' -OutFile $P; Start-Process -FilePath $P -Verb RunAs -Wait; Remove-Item $P}"
-echo:
+echo Downloading AdwCleaner
+bitsadmin /transfer "Downloading AdwCleaner..." /download /priority normal https://github.com/justinchapdelaine/IT-Resources/raw/master/Tools/adw.exe C:\STS\Programs\adw.exe
+
+echo Start AdwCleaner
+start C:\STS\Programs\rk.exe
 
 PAUSE
