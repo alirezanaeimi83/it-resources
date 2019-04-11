@@ -23,7 +23,7 @@
 --- Initialization Started ---
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
-Hard Drive S.M.A.R.T test: Pass/Fail 
+Windows S.M.A.R.T test: Pass/Fail 
 Restore point created: 'Setup Start'
 --- Initialization Completed ---
 ```
@@ -102,7 +102,7 @@ Restore point created: 'Setup Complete'
 Service Summary:
 -------------------------
 • Removed bloatware that can cause system slowdown and delivers advertisement.*
-• Windows updated to latest version avaliable for this unit (Version 1809).
+• Windows updated to latest version available for this unit (Version 1809).
 • Drivers updated to latest version provided by manufacture:
 --- BIOS, Graphics, Network, Audio.
 • Installed requested software:
