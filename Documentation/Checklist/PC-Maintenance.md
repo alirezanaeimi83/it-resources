@@ -6,6 +6,7 @@
 [Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
 
 [Initial](#initial) <br>
+[Hardware](#hardware) <br>
 [Scan](#scan) <br>
 [Windows](#windows) <br>
 [Optimization](#optimization) <br>
@@ -23,9 +24,17 @@
 --- Initialization Started ---
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
-Hard Drive S.M.A.R.T test: Pass/Fail 
+Windows S.M.A.R.T test: Pass/Fail 
 --- Initialization Completed ---
 ```
+
+#### Hardware
+> - [ ] Hard Drive test
+
+```
+--- Hardware Test Started ---
+CrystalDisk hard drive test result: Pass/Fail
+--- Hardware Test Completed
 
 ### Scan
 > - [ ] Malwarebytes scan
