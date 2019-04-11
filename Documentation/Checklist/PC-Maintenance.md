@@ -35,6 +35,7 @@ Windows S.M.A.R.T test: Pass/Fail
 --- Hardware Test Started ---
 CrystalDisk hard drive test result: Pass/Fail
 --- Hardware Test Completed
+```
 
 ### Scan
 > - [ ] Malwarebytes scan
