@@ -24,8 +24,17 @@
 --- Initialization Started ---
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
-Hard Drive S.M.A.R.T test: Pass/Fail 
+Windows S.M.A.R.T test: Pass/Fail 
 --- Initialization Completed ---
+```
+
+#### Hardware
+> - [ ] Hard Drive test
+
+```
+--- Hardware Test Started ---
+CrystalDisk hard drive test result: Pass/Fail
+--- Hardware Test Completed
 ```
 
 ### Remediation
