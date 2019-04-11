@@ -106,8 +106,8 @@ Service Summary:
 • Drivers updated to latest version provided by manufacture:
 --- BIOS, Graphics, Network, Audio.
 • Installed requested software:
---- Microsoft Office (installed and activated).
---- <Security> (installed and activated).
+--- Microsoft Office (activated).
+--- <Security> (needs activation).
 • Email account(s) <account> setup with Microsoft Outlook.
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.
