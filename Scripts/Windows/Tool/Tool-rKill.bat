@@ -9,12 +9,12 @@ echo 1. Create STS directory
 mkdir C:\STS\Programs
 echo:
 
-echo 2. Downloading rKill 2.9.1.0
-bitsadmin /transfer "Downloading rKill..." /download /priority normal https://dl.dropboxusercontent.com/s/7n94ql9zog1l1uf/rkill.exe C:\STS\Programs\rkill.exe
+echo 2. Downloading rKill
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/justinchapdelaine/IT-Resources/master/Tools/rk.exe', 'C:\STS\Programs\rk.exe')"
 echo:
 
-echo 3. Start rKill
-start C:\STS\Programs\rkill.exe
+echo 3. Starting rKill
+start C:\STS\Programs\rk.exe
 echo:
 
 PAUSE
