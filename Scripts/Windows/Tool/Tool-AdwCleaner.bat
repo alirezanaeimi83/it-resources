@@ -9,12 +9,14 @@ echo 1. Create STS directory
 mkdir C:\STS\Programs
 echo:
 
-echo 2. Download AdwCleaner 7.3
-bitsadmin /transfer "Downloading AdwCleaner..." /download /priority normal https://dl.dropboxusercontent.com/s/h8rwawulb1i64l8/adwcleaner_7.3.exe C:\STS\Programs\adwcleaner_7.3.exe
+echo 2. Download AdwCleaner
+REM bitsadmin /transfer "Downloading AdwCleaner..." /download /priority normal https://dl.dropboxusercontent.com/s/h8rwawulb1i64l8/adwcleaner_7.3.exe C:\STS\Programs\adwcleaner_7.3.exe
+
+powershell -Command "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/justinchapdelaine/IT-Resources/master/Tools/adw.exe', 'C:\STS\Programs\adw.exe')"
 echo:
 
 echo 3. Start AdwCleaner
-start C:\STS\Programs\adwcleaner_7.3.exe
+start C:\STS\Programs\adw.exe
 echo:
 
 PAUSE
