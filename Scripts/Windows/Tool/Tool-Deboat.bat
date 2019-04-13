@@ -100,6 +100,7 @@ REM --- Programs ---
 wmic product where name="Acer Jumpstart" call uninstall >nul
 wmic product where name="User Experience Improvement Program Service" call uninstall >nul
 wmic product where name="Amazon" call uninstall >nul
+wmic product where name="Acer UEIP Framework" call uninstall >nul
 
 echo 6. Remove HP Specific
 REM --- Metro Apps ---
@@ -111,6 +112,7 @@ wmic product where name="HP JumpStart Bridge" call uninstall >nul
 wmic product where name="HP Customer Experience Enhancements" call uninstall >nul
 wmic product where name="HP Registration Service" call uninstall >nul
 wmic product where name="ePrint SW" call uninstall >nul
+wmic product where name="HP ePrint SW" call uninstall >nul
 
 echo 7. Removing Lenovo Specific
 
