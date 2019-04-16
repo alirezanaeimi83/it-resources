@@ -40,7 +40,7 @@ echo Disable Suggestion In Start
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager /v SubscribedContent-338388Enabled /t REG_DWORD /d 0 /f
 echo:
 
-echo This may take a few minutes, there will be 10 steps
+echo This may take a few minutes, there will be 11 steps
 echo:
 
 echo 1. Removing Utilities
@@ -101,6 +101,7 @@ wmic product where name="Acer Jumpstart" call uninstall >nul
 wmic product where name="User Experience Improvement Program Service" call uninstall >nul
 wmic product where name="Amazon" call uninstall >nul
 wmic product where name="Acer UEIP Framework" call uninstall >nul
+wmic product where name="Acer Collection" call uninstall >nul
 
 echo 6. Remove HP Specific
 REM --- Metro Apps ---
@@ -128,7 +129,13 @@ wmic product where name="ASUS Device Activation" call uninstall >nul
 wmic product where name="ASUS GiftBox Service" call uninstall >nul
 wmic product where name="ASUS ZenAnywhere" call uninstall >nul
 
-echo 10. Unpining Non-Installed Bloatware (incomplete)
+echo 10. Removing Dell Specific
+REM --- Programs ---
+wmic product where name="Dropbox Update Helper" call uninstall >nul
+wmic product where name="Dropbox 20 GB" call uninstall >nul
+wmic product where name="Product Registration" call uninstall >nul
+
+echo 11. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
 echo Bloatware removal complete!
