@@ -1,5 +1,6 @@
 @echo off
 
+REM  --> Elevate permissions
 :: BatchGotAdmin
 :-------------------------------------
 REM  --> Check for permissions
@@ -44,6 +45,12 @@ echo 3. Set Time and Time Zone automatically
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\tzautoupdate /v Start /t REG_DWORD /d 3 /f
 echo:
+
+echo 4. Restart explorer to refresh desktop
+taskkill /f /im explorer.exe
+start explorer.exe
+start .
+
 
 echo All done!
 PAUSE
