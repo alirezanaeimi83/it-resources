@@ -100,27 +100,34 @@ REM --- Metro Apps ---
 ECHO %vendor% | FINDSTR "Acer" >nul && (
 	goto Acer
 	) || (
+	echo:
 )
 ECHO %vendor% | FINDSTR "HP" >nul && (
 	goto HP
 	) || (
+	echo:
 )
 ECHO %vendor% | FINDSTR "Lenovo" >nul && (
 	goto Lenovo
 	) || (
+	echo:
 )
 ECHO %vendor% | FINDSTR "Microsoft" >nul && (
 	goto Microsoft
 	) || (
+	echo:
 )
 ECHO %vendor% | FINDSTR "Asus" >nul && (
 	goto Asus
 	) || (
+	echo:
 )
 ECHO %vendor% | FINDSTR "Dell" >nul && (
 	goto Dell
 	) || (
+	echo:
 )
+goto End
 
 :Acer
 echo 5. Removing Acer Specific
