@@ -98,7 +98,7 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Booking* | Remove-AppxPackage"
 
 REM Remove Acer specific bloatware
-ECHO %vendor% | FINDSTR /C:"Acer" >nul && (
+ECHO %vendor% | FINDSTR "Acer" >nul && (
 	echo 5. Removing Acer Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *UserExperienceImprovementProgram* | Remove-AppxPackage"
@@ -111,12 +111,13 @@ ECHO %vendor% | FINDSTR /C:"Acer" >nul && (
 	wmic product where name="Amazon" call uninstall >nul
 	wmic product where name="Acer UEIP Framework" call uninstall >nul
 	wmic product where name="Acer Collection" call uninstall >nul
+	goto End
 ) || ( 
 echo Not Acer
 )
 
 REM Remove HP specific bloatware
-ECHO %vendor% | FINDSTR /C:"HP" >nul && (
+ECHO %vendor% | FINDSTR "HP" >nul && (
 	echo 5. Remove HP Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
@@ -128,26 +129,29 @@ ECHO %vendor% | FINDSTR /C:"HP" >nul && (
 	wmic product where name="HP Registration Service" call uninstall >nul
 	wmic product where name="ePrint SW" call uninstall >nul
 	wmic product where name="HP ePrint SW" call uninstall >nul
+	goto End
 ) || ( 
 echo Not HP
 )
 
 REM Remove Lenovo specific bloatware
-ECHO %vendor% | FINDSTR /C:"Lenovo" >nul && (
+ECHO %vendor% | FINDSTR "Lenovo" >nul && (
 	echo 5. Removing Lenovo Specific
+	goto End
 ) || ( 
 echo not Lenovo
 )
 
 REM Remove Microsoft specific bloatware
-ECHO %vendor% | FINDSTR /C:"Microsoft" >nul && (
+ECHO %vendor% | FINDSTR "Microsoft" >nul && (
 	echo 5. Removing Microsoft (Surface) Specific
+	goto End
 ) || ( 
 Echo not Surface
 )
 
 REM Remove Asus specific bloatware
-ECHO %vendor% | FINDSTR /C:"Asus" >nul && (
+ECHO %vendor% | FINDSTR "Asus" >nul && (
 	echo 5. Removing Asus Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
@@ -157,21 +161,24 @@ ECHO %vendor% | FINDSTR /C:"Asus" >nul && (
 	wmic product where name="ASUS Device Activation" call uninstall >nul
 	wmic product where name="ASUS GiftBox Service" call uninstall >nul
 	wmic product where name="ASUS ZenAnywhere" call uninstall >nul
+	goto End
 ) || ( 
 echo Not Asus
 )
 
 REM Remove Dell specific bloatware
-ECHO %vendor% | FINDSTR /C:"Dell" >nul && (
+ECHO %vendor% | FINDSTR "Dell" >nul && (
 	echo 5. Removing Dell Specific
 	REM --- Programs ---
 	wmic product where name="Dropbox Update Helper" call uninstall >nul
 	wmic product where name="Dropbox 20 GB" call uninstall >nul
 	wmic product where name="Product Registration" call uninstall >nul
+	goto End
 ) || ( 
 echo Not Dell
 )
 
+:End
 echo 6. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
