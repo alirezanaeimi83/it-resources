@@ -97,88 +97,90 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Amazon* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Booking* | Remove-AppxPackage"
 
-REM Remove Acer specific bloatware
 ECHO %vendor% | FINDSTR "Acer" >nul && (
-	echo 5. Removing Acer Specific
-	REM --- Metro Apps ---
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *UserExperienceImprovementProgram* | Remove-AppxPackage"
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *QuickAccess* | Remove-AppxPackage"
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *AcerRegistration* | Remove-AppxPackage"
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *AcerCollectionS* | Remove-AppxPackage"
-	REM --- Programs ---
-	wmic product where name="Acer Jumpstart" call uninstall >nul
-	wmic product where name="User Experience Improvement Program Service" call uninstall >nul
-	wmic product where name="Amazon" call uninstall >nul
-	wmic product where name="Acer UEIP Framework" call uninstall >nul
-	wmic product where name="Acer Collection" call uninstall >nul
-	goto End
-) || ( 
-echo Not Acer
+	goto Acer
+	) || (
 )
-
-REM Remove HP specific bloatware
 ECHO %vendor% | FINDSTR "HP" >nul && (
-	echo 5. Remove HP Specific
-	REM --- Metro Apps ---
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
-	REM --- Programs ---
-	wmic product where name="HP JumpStart Launch" call uninstall >nul
-	wmic product where name="HP JumpStart Bridge" call uninstall >nul
-	wmic product where name="HP Customer Experience Enhancements" call uninstall >nul
-	wmic product where name="HP Registration Service" call uninstall >nul
-	wmic product where name="ePrint SW" call uninstall >nul
-	wmic product where name="HP ePrint SW" call uninstall >nul
-	goto End
-) || ( 
-echo Not HP
+	goto HP
+	) || (
 )
-
-REM Remove Lenovo specific bloatware
 ECHO %vendor% | FINDSTR "Lenovo" >nul && (
-	echo 5. Removing Lenovo Specific
-	goto End
-) || ( 
-echo not Lenovo
+	goto Lenovo
+	) || (
 )
-
-REM Remove Microsoft specific bloatware
 ECHO %vendor% | FINDSTR "Microsoft" >nul && (
-	echo 5. Removing Microsoft (Surface) Specific
-	goto End
-) || ( 
-Echo not Surface
+	goto Microsoft
+	) || (
 )
-
-REM Remove Asus specific bloatware
 ECHO %vendor% | FINDSTR "Asus" >nul && (
-	echo 5. Removing Asus Specific
-	REM --- Metro Apps ---
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
-	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
-	REM --- Programs ---
-	wmic product where name="ASUS Hello" call uninstall >nul
-	wmic product where name="ASUS Device Activation" call uninstall >nul
-	wmic product where name="ASUS GiftBox Service" call uninstall >nul
-	wmic product where name="ASUS ZenAnywhere" call uninstall >nul
-	goto End
-) || ( 
-echo Not Asus
+	goto Asus
+	) || (
+)
+ECHO %vendor% | FINDSTR "Dell" >nul && (
+	goto Dell
+	) || (
 )
 
-REM Remove Dell specific bloatware
-ECHO %vendor% | FINDSTR "Dell" >nul && (
-	echo 5. Removing Dell Specific
-	REM --- Programs ---
-	wmic product where name="Dropbox Update Helper" call uninstall >nul
-	wmic product where name="Dropbox 20 GB" call uninstall >nul
-	wmic product where name="Product Registration" call uninstall >nul
-	goto End
-) || ( 
-echo Not Dell
-)
+:Acer
+echo 5. Removing Acer Specific
+REM --- Metro Apps ---
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *UserExperienceImprovementProgram* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *QuickAccess* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *AcerRegistration* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *AcerCollectionS* | Remove-AppxPackage"
+REM --- Programs ---
+wmic product where name="Acer Jumpstart" call uninstall >nul
+wmic product where name="User Experience Improvement Program Service" call uninstall >nul
+wmic product where name="Amazon" call uninstall >nul
+wmic product where name="Acer UEIP Framework" call uninstall >nul
+wmic product where name="Acer Collection" call uninstall >nul
+goto End
+
+:HP
+echo 5. Remove HP Specific
+REM --- Metro Apps ---
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
+REM --- Programs ---
+wmic product where name="HP JumpStart Launch" call uninstall >nul
+wmic product where name="HP JumpStart Bridge" call uninstall >nul
+wmic product where name="HP Customer Experience Enhancements" call uninstall >nul
+wmic product where name="HP Registration Service" call uninstall >nul
+wmic product where name="ePrint SW" call uninstall >nul
+wmic product where name="HP ePrint SW" call uninstall >nul
+goto End
+
+:Lenovo
+echo 5. Removing Lenovo Specific
+goto End
+
+:Microsoft
+echo 5. Removing Microsoft (Surface) Specific
+goto End
+
+:Asus
+echo 5. Removing Asus Specific
+REM --- Metro Apps ---
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
+REM --- Programs ---
+wmic product where name="ASUS Hello" call uninstall >nul
+wmic product where name="ASUS Device Activation" call uninstall >nul
+wmic product where name="ASUS GiftBox Service" call uninstall >nul
+wmic product where name="ASUS ZenAnywhere" call uninstall >nul
+goto End
+
+:Dell
+echo 5. Removing Dell Specific
+REM --- Programs ---
+wmic product where name="Dropbox Update Helper" call uninstall >nul
+wmic product where name="Dropbox 20 GB" call uninstall >nul
+wmic product where name="Product Registration" call uninstall >nul
+goto End
 
 :End
+
 echo 6. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
