@@ -100,32 +100,32 @@ REM --- Metro Apps ---
 ECHO %vendor% | FINDSTR "Acer" >nul && (
 	goto Acer
 	) || (
-	echo:
+	REM Not Acer
 )
 ECHO %vendor% | FINDSTR "HP" >nul && (
 	goto HP
 	) || (
-	echo:
+	REM Not HP
 )
 ECHO %vendor% | FINDSTR "Lenovo" >nul && (
 	goto Lenovo
 	) || (
-	echo:
+	REM Not Lenovo
 )
 ECHO %vendor% | FINDSTR "Microsoft" >nul && (
 	goto Microsoft
 	) || (
-	echo:
+	REM Not Microsoft
 )
 ECHO %vendor% | FINDSTR "Asus" >nul && (
 	goto Asus
 	) || (
-	echo:
+	REM Not Asus
 )
 ECHO %vendor% | FINDSTR "Dell" >nul && (
 	goto Dell
 	) || (
-	echo:
+	REM Not Dell
 )
 goto End
 
