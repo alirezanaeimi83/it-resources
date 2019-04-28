@@ -99,7 +99,7 @@ REM --- Metro Apps ---
 
 REM Remove Acer specific bloatware
 ECHO %vendor% | FINDSTR /C:"Acer" >nul && (
-	echo 5. Removing Acer Specific
+	echo 4. Removing Acer Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *UserExperienceImprovementProgram* | Remove-AppxPackage"
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *QuickAccess* | Remove-AppxPackage"
@@ -115,7 +115,7 @@ ECHO %vendor% | FINDSTR /C:"Acer" >nul && (
 
 REM Remove HP specific bloatware
 ECHO %vendor% | FINDSTR /C:"HP" >nul && (
-	echo 6. Remove HP Specific
+	echo 4. Remove HP Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPJumpStart* | Remove-AppxPackage"
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *HPPrinterControl* | Remove-AppxPackage"
@@ -128,13 +128,19 @@ ECHO %vendor% | FINDSTR /C:"HP" >nul && (
 	wmic product where name="HP ePrint SW" call uninstall >nul
 )
 
-echo 7. Removing Lenovo Specific
+REM Remove Lenovo specific bloatware
+ECHO %vendor% | FINDSTR /C:"Lenovo" >nul && (
+	echo 4. Removing Lenovo Specific
+)
 
-echo 8. Removing Microsoft (Surface) Specific
+REM Remove Microsoft specific bloatware
+ECHO %vendor% | FINDSTR /C:"Microsoft" >nul && (
+	echo 4. Removing Microsoft (Surface) Specific
+)
 
 REM Remove Asus specific bloatware
 ECHO %vendor% | FINDSTR /C:"Asus" >nul && (
-	echo 9. Removing Asus Specific
+	echo 4. Removing Asus Specific
 	REM --- Metro Apps ---
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSProductRegistrationProgram* | Remove-AppxPackage"
 	@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *ASUSGIFTBOX* | Remove-AppxPackage"
@@ -147,14 +153,14 @@ ECHO %vendor% | FINDSTR /C:"Asus" >nul && (
 
 REM Remove Dell specific bloatware
 ECHO %vendor% | FINDSTR /C:"Dell" >nul && (
-	echo 10. Removing Dell Specific
+	echo 4. Removing Dell Specific
 	REM --- Programs ---
 	wmic product where name="Dropbox Update Helper" call uninstall >nul
 	wmic product where name="Dropbox 20 GB" call uninstall >nul
 	wmic product where name="Product Registration" call uninstall >nul
 )
 
-echo 11. Unpining Non-Installed Bloatware (incomplete)
+echo 5. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
 echo Bloatware removal complete!
