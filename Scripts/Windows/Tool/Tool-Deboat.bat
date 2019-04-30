@@ -117,7 +117,7 @@ ECHO %vendor% | FINDSTR "Microsoft" >nul && (
 	) || (
 	REM Not Microsoft
 )
-ECHO %vendor% | FINDSTR "Asus" >nul && (
+ECHO %vendor% | FINDSTR "ASUSTeK" >nul && (
 	goto Asus
 	) || (
 	REM Not Asus
