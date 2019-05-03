@@ -107,7 +107,7 @@ ECHO %vendor% | FINDSTR "HP" >nul && (
 	) || (
 	REM Not HP
 )
-ECHO %vendor% | FINDSTR "Lenovo" >nul && (
+ECHO %vendor% | FINDSTR "LENOVO" >nul && (
 	goto Lenovo
 	) || (
 	REM Not Lenovo
