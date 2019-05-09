@@ -54,8 +54,6 @@ Malwarebytes: Security threats detected: #
 
 ```
 --- System Repair Started ---
-Disk file system repair started
-Windows integrity repair started
 Disk file system repair result: Pass/Fail
 Windows integrity repair result: Pass/Fail
 --- System Repair Completed ---
@@ -67,8 +65,7 @@ Windows integrity repair result: Pass/Fail
 
 ```
 --- Optimization Started ---
-Potentially unwanted programs removal started
-Potentially unwanted programs removal completed
+Potentially unwanted programs removed:
 Device optimization started
 Device optimization completed
 --- Optimization Completed
