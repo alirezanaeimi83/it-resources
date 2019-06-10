@@ -34,10 +34,10 @@ Restore point created: 'Setup Start'
 
 ```
 --- Updates Started ---
-System updates started
-System updates completed
 Driver updates started
 Driver updates completed
+System updates started
+System updates completed
 --- Updates Completed ---
 ```
 
