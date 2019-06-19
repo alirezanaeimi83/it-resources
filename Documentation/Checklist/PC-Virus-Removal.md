@@ -47,6 +47,7 @@ CrystalDisk hard drive test result: Pass/Fail
 --- Security Remediation Started ---
 rKill: Security threats disabled: #
 AdwCleaner: Security threats removed: #
+KVRT: Security threats removed: #
 Malwarebytes: Security threats removed: #
 Verification: Security threats remaining: #
 --- Security Remediation Completed ---
@@ -58,8 +59,6 @@ Verification: Security threats remaining: #
 
 ```
 --- System Repair Started ---
-Disk file system repair started
-Windows integrity repair started
 Disk file system repair result: Pass/Fail
 Windows integrity repair result: Pass/Fail
 --- System Repair Completed ---
@@ -72,7 +71,6 @@ Windows integrity repair result: Pass/Fail
 ```
 --- Optimization Started ---
 Potentially unwanted programs removed:
----
 Device optimization started
 Device optimization completed
 --- Optimization Completed
@@ -117,6 +115,10 @@ Restore point created: 'Virus Removal Complete'
 ### Customer Note
 ```
 Service Summary:
+-------------------------
+
+
+Service Breakdown:
 -------------------------
 Service Summary:
 • Malware threats removed: 18

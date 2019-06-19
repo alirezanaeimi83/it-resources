@@ -60,7 +60,7 @@ Malwarebytes: Security threats detected: #
 --- System Diagnostic Started ---
 Disk file system test result: Pass/Fail
 Windows integrity test result: Pass/Fail
-Device driver check: Pass/Fail
+Device manager check: Pass/Fail
 System configuration check: Pass/Fail
 Reliability History check: Pass/Fail
 Event Viewer check: Pass/Fail
@@ -93,6 +93,15 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
+
+
+Recommendation:
+-------------------------
+1. <type custom recommendation>
+
+
+Service Breakdown:
+-------------------------
 • Hardware Test: Pass/Fail
 • Malware Threats Found: #
 • Adware Threats Found: #
@@ -104,8 +113,4 @@ Service Summary:
 --- Event
 --- Event
 • <Security> is active and up to date, expires in #
-
-Recommendation:
--------------------------
-1. <type custom recommendation>
 ```

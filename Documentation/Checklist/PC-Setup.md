@@ -101,6 +101,10 @@ Restore point created: 'Setup Complete'
 ```
 Service Summary:
 -------------------------
+
+
+Service Breakdown:
+-------------------------
 • Removed bloatware that can cause system slowdown and delivers advertisement.*
 • Windows updated to latest version available for this unit (Version 1809).
 • Drivers updated to latest version provided by manufacture:

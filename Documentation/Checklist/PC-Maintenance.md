@@ -110,6 +110,15 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
+
+
+Recommendation:
+-------------------------
+1. <type custom recommendation>
+
+
+Service Breakdown:
+-------------------------
 • Malware threats detected: #
 • Adware threats removed: #
 • Disk file system checked and errors were repaired.
@@ -123,8 +132,4 @@ Service Summary:
 
 *Potentially Unwanted Programs Removed:
 - <list programs>
-
-Recommendation:
--------------------------
-1. <type custom recommendation>
 ```
