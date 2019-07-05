@@ -1,12 +1,18 @@
 @echo off
 
-REM Remove manufacture bloatware on new setups
-REM Author: Justin Chapdelaine
-REM Version: 20190330.1
-REM Source: https://github.com/justinchapdelaine/IT-Resources
+::--------------------------------------------------
+:: Set Windows 10 start menu tiles to specific layout
+:: 
+:: File Name    : Set-Tiles.bat
+:: Author       : Justin Chapdelaine (@email)
+:: Updated      : 2019-07-05
+:: 
+:: Script posted at:
+:: https://github.com/justinchapdelaine/it-resources
+::--------------------------------------------------
 
-REM Use to get all installed packages: Get-AppxPackage | Select Name , PackageFullName
-REM To output all installed packages to desktop: Get-AppxPackage | Select Name, PackageFullName >"$env:userprofile\Desktop\InstalledApps_List.txt"
+:: Use to get all installed packages: Get-AppxPackage | Select Name , PackageFullName
+:: To output all installed packages to desktop: Get-AppxPackage | Select Name, PackageFullName >"$env:userprofile\Desktop\InstalledApps_List.txt"
 
 REM  --> Elevate permissions
 :: BatchGotAdmin

@@ -1,5 +1,16 @@
 @echo off
 
+::--------------------------------------------------
+:: Set Windows 10 start menu tiles to specific layout
+:: 
+:: File Name    : Set-Tiles.bat
+:: Author       : Justin Chapdelaine (@email)
+:: Updated      : 2019-07-05
+:: 
+:: Script posted at:
+:: https://github.com/justinchapdelaine/it-resources
+::--------------------------------------------------
+
 REM  --> Elevate permissions
 :: BatchGotAdmin
 :-------------------------------------
@@ -25,12 +36,7 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
-	
-REM Set Start Menu tiles to desired template
-REM Author: Justin Chapdelaine
-REM Version: 20190426.1
-REM Source: https://github.com/justinchapdelaine/IT-Resources
-	
+
 SET APPDIR=%~dp0
 SET ASSETDIR=%APPDIR%assets\
 cd %APPDIR%

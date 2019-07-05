@@ -1,6 +1,18 @@
 @echo off
 
-:: BatchGotAdmin
+::--------------------------------------------------
+:: Test boot partition and system integrity
+:: 
+:: File Name    : Test-System.bat
+:: Author       : Justin Chapdelaine (@email)
+:: Updated      : 2019-07-05
+:: 
+:: Script posted at:
+:: https://github.com/justinchapdelaine/it-resources
+::--------------------------------------------------
+
+REM  --> Elevate permissions
+:: Self elevate script if not run as administrator
 :-------------------------------------
 REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -25,25 +37,15 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-REM Start Service will get serial number, disable sleep, and get S.M.A.R.T. status, Create restore point
-REM Author: Justin Chapdelaine
-REM Version: 20190323.1
-REM Source: https://github.com/justinchapdelaine/IT-Resources
+:: Test boot partition file system
+echo 1. Test boot partition file system
+chkdsk
+echo:
 
-rem Serial Number
-wmic bios get serialnumber
+:: Test operating system integrity
+echo 2. Test operating system integrity
+sfc /verifyonly
+echo:
 
-echo Disable sleep and monitor timeout
-powercfg /change monitor-timeout-ac 0
-powercfg /change standby-timeout-ac 0
-echo Done 
-
-echo S.M.A.R.T. status
-wmic diskdrive get status 
-
-echo Create initial restore point
-Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Setup Started", 100, 12
-echo: 
-
-echo Start your setup!
-PAUSE
+:: Wait to close
+pause
