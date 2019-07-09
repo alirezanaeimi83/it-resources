@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=AdwCleaner.exe"
 set "url=https://download.toolslib.net/download/direct/1/latest?channel=release"
+set "flags="
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5

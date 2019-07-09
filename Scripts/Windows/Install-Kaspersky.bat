@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Kaspersky_Internet_Security.exe"
 set "url=https://trial.s.kaspersky-labs.com/registered/oaavni0cztkt4nb17kzs/27c9b336/startup_14442.exe"
+set "flags="
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5

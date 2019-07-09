@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Norton_Premium.exe"
 set "url=https://lcdls.symantec.com/93639012/CXlwMQ0HR9DNR00RSDTAVsy/+/Abcb003MD/////%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E%2F%26%7E/NSBUDownloader.exe?LNG=eng-USA&latest=true"
+set "flags="
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5

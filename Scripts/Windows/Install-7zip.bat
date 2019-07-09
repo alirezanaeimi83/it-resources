@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=7zip.exe"
 set "url=https://www.7-zip.org/a/7z1900-x64.exe"
+set "flags= /S /D="%PROGRAMFILES%\7-Zip"
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5

@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Mozilla_Firefox.exe"
 set "url=https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-CA"
+set "flags= -ms"
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5

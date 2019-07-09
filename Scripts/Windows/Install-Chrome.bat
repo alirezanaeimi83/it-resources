@@ -15,6 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Google_Chrome.exe"
 set "url=https://dl.google.com/chrome/install/latest/chrome_installer.exe"
+set "flags= /silent /install"
 
 
 :: Create %folder%
@@ -26,7 +27,7 @@ PowerShell -NoProfile -Command "(New-Object Net.WebClient).DownloadFile('%url%',
 
 :: Start %file%
 echo 2. Starting %file%
-start %folder%%file%
+start %folder%%file%%flags%
 
 :: Close window in 5 seconds
 timeout /t 5
