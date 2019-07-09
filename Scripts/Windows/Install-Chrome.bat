@@ -15,7 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Google_Chrome.exe"
 set "url=https://dl.google.com/chrome/install/latest/chrome_installer.exe"
-set "flags= /silent /install"
+set "flags="
 
 
 :: Create %folder%

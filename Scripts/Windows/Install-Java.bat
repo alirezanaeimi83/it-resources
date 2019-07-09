@@ -15,7 +15,7 @@
 set "folder=C:\STS\Programs\"
 set "file=Java.exe"
 set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=238726_478a62b7d4e34b78b671c754eaaf38ab"
-set "flags="
+set "flags= /s"
 
 
 :: Create %folder%
