@@ -62,8 +62,8 @@ Disk file system test result: Pass/Fail
 Windows integrity test result: Pass/Fail
 Device manager check: Pass/Fail
 System configuration check: Pass/Fail
-Reliability History check: Pass/Fail
-Event Viewer check: Pass/Fail
+Reliability History / Event Viewer:
+- No recurring issues
 --- System Diagnostic Completed ---
 ```
 
@@ -80,7 +80,7 @@ Event Viewer check: Pass/Fail
 #### Cleanup
 > - [ ] Remove our tools
 > - [ ] Reset power settings
-> - [ ] Write service summary and recommendations\
+> - [ ] Write service summary and recommendations
 
 ```
 --- Cleanup Started ---

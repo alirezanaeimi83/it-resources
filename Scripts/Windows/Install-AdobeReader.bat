@@ -14,7 +14,7 @@
 :: Variables
 set "folder=C:\STS\Programs\"
 set "file=AdobeReader.exe"
-set "url=http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1901220034/AcroRdrDC1901220034_en_US.exe"
+set "url=http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1901220036/AcroRdrDC1901220036_en_US.exe"
 set "flags= '/sAll /rs"
 
 

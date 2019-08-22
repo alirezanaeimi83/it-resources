@@ -1,11 +1,11 @@
 @echo off
 
 ::--------------------------------------------------
-:: Install VLC Media Player
+:: Downlod and run Norton Power Eraser
 :: 
-:: File Name    : Install-VLC.bat
+:: File Name    : Get-NortonPE.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-07-05
+:: Updated      : 2019-08-05
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -13,9 +13,9 @@
 
 :: Variables
 set "folder=C:\STS\Programs\"
-set "file=vlc-installer.exe"
-set "url=https://get.videolan.org/vlc/3.0.8/win64/vlc-3.0.8-win64.exe"
-set "flags= /L=1033 /S"
+set "file=NPE.exe"
+set "url=https://support.norton.com/sp/static/external/NPE/5.3/prod/en/NPE.exe"
+set "flags="
 
 
 :: Create %folder%

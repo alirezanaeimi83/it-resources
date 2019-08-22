@@ -75,7 +75,7 @@ Installed programs set as default
 
 ```
 --- Customization Started ---
-Email account(s) <account> setup
+Email account(s) setup in Windows Mail:
 Data migration started
 Data migration completed
 Recovery media creation started
@@ -106,12 +106,12 @@ Service Summary:
 Service Breakdown:
 -------------------------
 • Removed bloatware that can cause system slowdown and delivers advertisement.*
-• Windows updated to latest version available for this unit (Version 1809).
+• Windows updated to latest version available for this unit (Version 1903).
 • Drivers updated to latest version provided by manufacture:
---- BIOS, Graphics, Network, Audio.
+--- 
 • Installed requested software:
---- Microsoft Office (activated).
---- <Security> (needs activation).
+--- 
+--- 
 • Email account(s) <account> setup with Microsoft Outlook.
 • Optimized registry and removed unnecessary junk files to speed up boot time.
 • Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.

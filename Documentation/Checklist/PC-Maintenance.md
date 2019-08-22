@@ -125,9 +125,9 @@ Service Breakdown:
 • Windows integrity checked and corruption was repaired.
 • Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisement.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit (Version 1809).
+• Windows updated to latest version avaliable for this unit (Version 1903).
 • Drivers updated to latest version provided by manufacture:
---- BIOS, Graphics, Network, Audio.
+--- 
 • <Security> is active and up to date, expires in #
 
 *Potentially Unwanted Programs Removed:
