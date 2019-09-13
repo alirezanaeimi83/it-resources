@@ -56,6 +56,7 @@ echo 4. Restart explorer to refresh desktop
 taskkill /f /im explorer.exe
 start explorer.exe
 start .
+echo:
 
 
 echo All done!
