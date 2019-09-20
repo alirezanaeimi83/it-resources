@@ -1,7 +1,7 @@
 @echo off
 
 ::--------------------------------------------------
-:: Set Windows 10 start menu tiles to specific layout
+:: Set Windows 10 to show This PC and User desktop icons and set Time and Time Zone to autmatic
 :: 
 :: File Name    : Set-Tiles.bat
 :: Author       : Justin Chapdelaine (@email)
@@ -12,7 +12,7 @@
 ::--------------------------------------------------
 
 REM  --> Elevate permissions
-:: BatchGotAdmin
+:: Self elevate script if not run as administrator
 :-------------------------------------
 REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -37,6 +37,9 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
+echo Setting desktop icons and time settings...
+echo:
+
 echo 1. Display This PC
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel /v {20D04FE0-3AEA-1069-A2D8-08002B30309D} /t REG_DWORD /d 0 /f
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu /v {20D04FE0-3AEA-1069-A2D8-08002B30309D} /t REG_DWORD /d 0 /f
@@ -57,7 +60,6 @@ taskkill /f /im explorer.exe
 start explorer.exe
 start .
 echo:
-
 
 echo All done!
 PAUSE

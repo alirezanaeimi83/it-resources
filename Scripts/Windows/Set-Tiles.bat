@@ -12,7 +12,7 @@
 ::--------------------------------------------------
 
 REM  --> Elevate permissions
-:: BatchGotAdmin
+:: Self elevate script if not run as administrator
 :-------------------------------------
 REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"

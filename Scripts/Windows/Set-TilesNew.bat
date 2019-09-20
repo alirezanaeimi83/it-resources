@@ -12,7 +12,7 @@
 ::--------------------------------------------------
 
 REM  --> Elevate permissions
-:: BatchGotAdmin
+:: Self elevate script if not run as administrator
 :-------------------------------------
 REM  --> Check for permissions
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
@@ -46,23 +46,26 @@ IF NOT EXIST "%ASSETDIR%" (
 		
 		echo ASSET DIRECTORY NOT FOUND!
 		echo Please run Tool-BackupTiles.bat first with a desired tile setup to create a template.
+        echo:
 		GOTO END
 	)
 
+echo Configuring start menu tiles...
+echo:
 
 echo 1. Killing File Explorer
 taskkill /f /im explorer.exe
 echo:
 
-echo 3. Configuring start menu tiles
+echo 2. Configuring start menu tiles
 reg import "%ASSETDIR%\reg\CloudStore.reg"
 echo:
 
-echo 4. Restarting File Explorer
+echo 3. Restarting File Explorer
 start explorer.exe
 start .
 echo:
 
-:END
 echo Start Menu template applied!
+:END
 PAUSE
