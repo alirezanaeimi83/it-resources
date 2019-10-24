@@ -1,63 +1,55 @@
-<!-- :: Batch section
 @echo off
-setlocal
 
 ::--------------------------------------------------
-:: Copy data from one location to another
+:: Copy data from source to destination
 :: 
 :: File Name    : Copy-Data.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-08-03
+:: Updated      : 2019-10-24
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
 ::--------------------------------------------------
 
-:: Start cmd windows minimized
-if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
+:: Run script as administrator
+:checkPrivileges
 
-:: Open HTA GUI window
-echo Select an option:
-for /F "delims=" %%a in ('mshta.exe "%~F0"') do set "HTAreply=%%a"
-echo End of HTA window, reply: "%HTAreply%"
-exit
+NET FILE 1>NUL 2>NUL
 
-:: for /f "skip=1 delims=" %%x in ('wmic logicaldisk get name') do @echo.%%x
--->
+if '%errorlevel%' == '0' (
+    goto mainScript 
+) else (
+    goto getPrivileges
+)
+::-------------------------------------------------------------------------------------------------
 
+:getPrivileges
 
-<HTML>
-<HEAD>
-<HTA:
-    APPLICATIONNAME="Staples Backup"
-    APPLICATION SCROLL="yes" 
-    SYSMENU="yes" 
->
+if '%1'=='ELEV' (shift & goto mainScript)
+echo Requesting administrative privileges...
+setlocal DisableDelayedExpansion
+set "batchPath=%~0"
+setlocal EnableDelayedExpansion
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\runAsAdmin.vbs"
+echo UAC.ShellExecute "!batchPath!", "ELEV", "", "runas", 1 >> "%temp%\runAsAdmin.vbs"
+"%temp%\runAsAdmin.vbs"
+exit /B
+::-------------------------------------------------------------------------------------------------
 
-<TITLE>Staples Backup</TITLE>
+:: Running as administrator
+:mainScript
 
-<SCRIPT language="VBScript">
+echo Please enter the full path of the source (ie. D:\Users): 
+set /p "source="
 
-   Set objShell = CreateObject("Shell.Application")
+echo Please enter the full path of the destination (ie. C:\Users\Owner\Desktop\O942A1E1): 
+set /p "destination="
 
-   Sub Window_OnLoad
-      window.resizeTo 600,400
-   End Sub
+:: Get source folder name
+for %%f in ("%source%") do set name=%%~nxf
 
-   Sub getDrives
-      Dim command
-      command = "/c for /f "skip=1 delims=" %%x in ('wmic logicaldisk get name') do @echo.%%x"
-      objShell.ShellExecute "cmd.exe", command, "", "runas", 1
-   End Sub
+:: Copy files from a source to a destination and write a log file
+robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /log:"%destination%\Log-%name%.txt" /np /tee
 
-</SCRIPT>
-
-</HEAD>
-
-<BODY>
-
-   <input id=runbutton  class="button" type="button" value="Flush DNS" name="db_button"  onClick="getDrives"><p>
-   
-</BODY>
-
-</HTML>
+echo A log has been saved to %destination%\Log-%name%.txt
+pause
