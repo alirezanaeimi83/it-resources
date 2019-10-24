@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Set-Tiles.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-07-05
+:: Updated      : 2019-08-28
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -45,35 +45,27 @@ cd %APPDIR%
 IF NOT EXIST "%ASSETDIR%" (
 		
 		echo ASSET DIRECTORY NOT FOUND!
-		echo Please run Tool-BackupTiles.bat first with a desired setup to create a template.
+		echo Please run Tool-BackupTiles.bat first with a desired tile setup to create a template.
+        echo:
 		GOTO END
 	)
 
+echo Configuring start menu tiles...
+echo:
 
-echo 1. Killing File Explorer...
+echo 1. Killing File Explorer
 taskkill /f /im explorer.exe
+echo:
 
+echo 2. Configuring start menu tiles
+reg import "%ASSETDIR%\reg\CloudStore.reg"
+echo:
 
-echo 2. File restore in progress!
-rmdir /s/q "%LocalAppData%\Microsoft\Windows\CloudStore"
-robocopy "%ASSETDIR%CloudStore" "%LocalAppData%\Microsoft\Windows\CloudStore" /E
-
-rmdir /s/q "%LocalAppData%\Microsoft\Windows\Caches"
-robocopy "%ASSETDIR%Caches" "%LocalAppData%\Microsoft\Windows\Caches" /E
-
-rmdir /s/q "%LocalAppData%\Microsoft\Windows\Explorer"
-robocopy "%ASSETDIR%Explorer" "%LocalAppData%\Microsoft\Windows\Explorer" /E
-
-
-echo 3. Registry key restore in progress!
-reg import "%ASSETDIR%CloudStore.reg"
-
-
-echo 4. Restarting File Explorer...
+echo 3. Restarting File Explorer
 start explorer.exe
 start .
+echo:
 
-
-:END
 echo Start Menu template applied!
+:END
 PAUSE
