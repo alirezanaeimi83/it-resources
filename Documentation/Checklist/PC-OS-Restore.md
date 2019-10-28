@@ -112,7 +112,7 @@ Migrated all data from <source> to <destination>:
 --- Cleanup Started ---
 Power settings reset to default
 Removed remote tools
-Restore point created: 'Setup Complete'
+Restore point created: 'OS Restore Complete'
 --- Cleanup Completed ---
 ```
 
@@ -133,7 +133,7 @@ Service Breakdown:
 • Email account(s) setup with Windows Mail:
 --- 
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Created restore point 'Setup Complete'. The computer can be restored to this point if something goes wrong in the future.
+• Created restore point 'OS Restore Complete'. The computer can be restored to this point if something goes wrong in the future.
 • Created recovery drive to help troubleshoot and fix problems with computer, even if it won’t start.
 • Migrated all data from <source> to <destination>
 ```
