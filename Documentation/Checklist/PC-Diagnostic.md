@@ -70,10 +70,12 @@ Reliability History / Event Viewer:
 #### Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
+> - [ ] Perform a system benchmark
 
 ```
 --- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+System Benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
@@ -93,12 +95,11 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
-
+<Summary of service>
 
 Recommendation:
 -------------------------
-1. <type custom recommendation>
-
+1) <type custom recommendation>
 
 Service Breakdown:
 -------------------------
@@ -110,7 +111,7 @@ Service Breakdown:
 • Device Driver Check: Pass/Fail
 • System Configuration Check: Pass/Fail
 • Reliability History / Event Viewer: 
---- Event
---- Event
+--- No recurring issues.
+• System Benchmark: Low/Average/High performance
 • <Security> is active and up to date, expires in #
 ```

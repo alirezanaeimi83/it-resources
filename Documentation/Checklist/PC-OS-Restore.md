@@ -1,11 +1,13 @@
 # PC Setup
 
 [PC Setup](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#pc-setup) | 
+[OS Restore](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-OS-Restore.md#os-restore) | 
 [Diagnostic](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Diagnostic.md#pc-diagnostic) | 
 [Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#maintenance) | 
 [Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
 
 [Initial](#initial) <br>
+[Hardware](#hardware) <br>
 [Updates](#updates) <br>
 [Optimization](#optimization) <br>
 [Software Installation](#software-installation) <br>
@@ -26,6 +28,17 @@ Disabled monitor and sleep timeout
 Windows S.M.A.R.T test: Pass/Fail 
 Restore point created: 'Setup Start'
 --- Initialization Completed ---
+```
+
+#### Hardware
+> - [ ] Hard Drive test
+> - [ ] Windows install date
+
+```
+--- Hardware Test Started ---
+CrystalDisk hard drive test result: Pass/Fail
+Original Install Date: <yyy/mm/dd>
+--- Hardware Test Completed ---
 ```
  
 ### Updates
