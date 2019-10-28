@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Copy-Data.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-10-24
+:: Updated      : 2019-10-27
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -47,6 +47,11 @@ set /p "destination="
 
 :: Get source folder name
 for %%f in ("%source%") do set name=%%~nxf
+
+:: If source is root of drive label as root
+if "%name" == "" (
+    set "name=root"
+)
 
 :: Copy files from a source to a destination and write a log file
 robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /log:"%destination%\Log-%name%.txt" /np /tee

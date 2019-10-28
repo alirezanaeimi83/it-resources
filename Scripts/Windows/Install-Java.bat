@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Install-Java.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-07-05
+:: Updated      : 2019-10-27
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -14,7 +14,7 @@
 :: Variables
 set "folder=C:\STS\Programs\"
 set "file=Java.exe"
-set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=239827_230deb18db3e4014bb8e3e8324f81b43"
+set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=240728_5b13a193868b4bf28bcb45c792fce896"
 set "flags= /s"
 
 

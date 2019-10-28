@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Set-Tiles.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-07-05
+:: Updated      : 2019-10-27
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -193,8 +193,6 @@ wmic product where name="Product Registration" call uninstall >nul
 goto End
 
 :End
-
-echo 6. Unpining Non-Installed Bloatware (incomplete)
 
 echo:
 echo Bloatware removal complete!

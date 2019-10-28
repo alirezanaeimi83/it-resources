@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Update-Drivers.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-07-09
+:: Updated      : 2019-10-27
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -43,7 +43,7 @@ exit /B
 set "modulesFolder=%windir%\System32\WindowsPowerShell\v1.0\Modules\"
 if not exist %modulesFolder% ( mkdir %modulesFolder% && echo %modulesFolder% created)
 
-echo 1. Initializing driver updater...
+echo 1. Initializing driver updates.
 echo:
 
 :: Install NuGet package provider
@@ -58,7 +58,7 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Import-Module PSWindowsU
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Add-WUServiceManager -ServiceID 7971f918-a847-4430-9279-4a52d1efe18d -Confirm:$false" >nul
 
 :: Update all drivers
-echo 2. Searching for driver updates...
+echo 2. Searching for driver updates.
 echo:
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Install-WindowsUpdate -MicrosoftUpdate -UpdateType Driver -AcceptAll -IgnoreReboot -Verbose"
 
@@ -69,5 +69,9 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Uninstall-Module PSWindo
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "Get-PackageProvider -Name NuGet | Uninstall-Package -Force"
 
 echo:
-echo Driver updates complete! A reboot may be required.
+echo 3. Driver updates complete! Computer will reboot automatically in 15 minutes, press any key to cancel reboot.
+shutdown /r /t 900
+
+echo:
 pause
+shutdown /a
