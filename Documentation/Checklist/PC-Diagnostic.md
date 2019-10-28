@@ -1,9 +1,10 @@
 # PC Diagnostic
 
 [PC Setup](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#pc-setup) | 
-[Diagnostic](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Diagnostic.md#pc-diagnostic) | 
-[Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#maintenance) | 
-[Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
+[PC OS Restore](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-OS-Restore.md#pc-os-restore) | 
+[PC Diagnostic](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Diagnostic.md#pc-diagnostic) | 
+[PC Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#pc-maintenance) | 
+[PC Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#pc-virus-removal)
 
 [Initial](#initial) <br>
 [Hardware](#hardware) <br>
@@ -62,25 +63,27 @@ Disk file system test result: Pass/Fail
 Windows integrity test result: Pass/Fail
 Device manager check: Pass/Fail
 System configuration check: Pass/Fail
-Reliability History check: Pass/Fail
-Event Viewer check: Pass/Fail
+Reliability History / Event Viewer:
+- No recurring issues
 --- System Diagnostic Completed ---
 ```
 
 #### Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
+> - [ ] Perform a system benchmark
 
 ```
 --- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+System Benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
 #### Cleanup
 > - [ ] Remove our tools
 > - [ ] Reset power settings
-> - [ ] Write service summary and recommendations\
+> - [ ] Write service summary and recommendations
 
 ```
 --- Cleanup Started ---
@@ -93,12 +96,11 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
-
+<Summary of service>
 
 Recommendation:
 -------------------------
-1. <type custom recommendation>
-
+1) <type custom recommendation>
 
 Service Breakdown:
 -------------------------
@@ -110,7 +112,7 @@ Service Breakdown:
 • Device Driver Check: Pass/Fail
 • System Configuration Check: Pass/Fail
 • Reliability History / Event Viewer: 
---- Event
---- Event
+--- No recurring issues.
+• System Benchmark: Low/Average/High performance
 • <Security> is active and up to date, expires in #
 ```

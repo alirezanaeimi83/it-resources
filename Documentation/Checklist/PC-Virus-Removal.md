@@ -1,9 +1,10 @@
-# Virus Removal
+# PC Virus Removal
 
 [PC Setup](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Setup.md#pc-setup) | 
-[Diagnostic](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Diagnostic.md#pc-diagnostic) | 
-[Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#maintenance) | 
-[Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#virus-removal) 
+[PC OS Restore](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-OS-Restore.md#pc-os-restore) | 
+[PC Diagnostic](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Diagnostic.md#pc-diagnostic) | 
+[PC Maintenance](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Maintenance.md#pc-maintenance) | 
+[PC Virus Removal](https://github.com/justinchapdelaine/IT-Resources/blob/master/Documentation/Checklist/PC-Virus-Removal.md#pc-virus-removal)
 
 [Initial](#initial) <br>
 [Hardware](#hardware) <br>
@@ -38,16 +39,13 @@ CrystalDisk hard drive test result: Pass/Fail
 ```
 
 ### Remediation
-> - [ ] Run rKill
 > - [ ] Adwcleaner clean
 > - [ ] Malwarebytes clean
 > - [ ] Verification scan
 
 ```
 --- Security Remediation Started ---
-rKill: Security threats disabled: #
 AdwCleaner: Security threats removed: #
-KVRT: Security threats removed: #
 Malwarebytes: Security threats removed: #
 Verification: Security threats remaining: #
 --- Security Remediation Completed ---
@@ -71,9 +69,10 @@ Windows integrity repair result: Pass/Fail
 ```
 --- Optimization Started ---
 Potentially unwanted programs removed:
+- No malicious items
 Device optimization started
 Device optimization completed
---- Optimization Completed
+--- Optimization Completed ---
 ```
 
 ### Updates
@@ -82,20 +81,22 @@ Device optimization completed
 
 ```
 --- Updates Started ---
-Driver updates started
-Driver updates completed
 System updates started
 System updates completed
+Driver updates started
+Driver updates completed
 --- Updates Completed ---
 ```
 
 ### Additional
 > - [ ] Test concerns from customer
 > - [ ] Check security suite
+> - [ ] Perform a system benchmark
 
 ```
 --- Customization Started ---
 <Security Suite> is active, updated and expires in # days
+System Benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
@@ -120,16 +121,16 @@ Service Summary:
 
 Service Breakdown:
 -------------------------
-Service Summary:
-• Malware threats removed: 18
-• Adware threats removed: 62
+• Adware threats removed: #
+• Malware threats removed: #
 • Disk file system checked and errors were repaired.
 • Windows integrity checked and corruption was repaired.
 • Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisement.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit (Version 1809).
+• Windows updated to latest version avaliable for this unit (Version 1903).
 • Drivers updated to latest version provided by manufacture:
---- BIOS, Graphics, Network, Audio.
+--- 
+• System Benchmark: Low/Average/High performance
 • <Security> is active and up to date, expires in # days
 • Created restore point 'Virus Removal Complete'. The computer can be restored to this point if something goes wrong in the future.
 
