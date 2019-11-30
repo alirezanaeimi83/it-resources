@@ -127,10 +127,10 @@ Service Breakdown:
 • Malware threats detected: #
 • Disk file system checked and errors were repaired.
 • Windows integrity checked and corruption was repaired.
-• Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisement.*
+• Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisements.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit (Version 1903).
-• Drivers updated to latest version provided by manufacture:
+• Windows updated to latest version avaliable for this unit (Version 1909).
+• Drivers updated to latest version provided by manufacturer:
 --- 
 • System Benchmark: Low/Average/High performance
 • <Security> is active and up to date, expires in #
