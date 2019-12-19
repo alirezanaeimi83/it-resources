@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Copy-Data.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-10-27
+:: Updated      : 2019-12-18
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -49,12 +49,20 @@ set /p "destination="
 for %%f in ("%source%") do set name=%%~nxf
 
 :: If source is root of drive label as root
-if "%name" == "" (
-    set "name=root"
+if "%name%" == "" (
+    set "name=Root"
 )
+
+:: If source is a root drive, escape the escape character
+if %source:~-1%==\ (
+    set "source=%source%."
+)
+
+echo %source%
 
 :: Copy files from a source to a destination and write a log file
 robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /log:"%destination%\Log-%name%.txt" /np /tee
 
+echo Migrated all data from %source% to %destination%.
 echo A log has been saved to %destination%\Log-%name%.txt
 pause
