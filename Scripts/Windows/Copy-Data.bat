@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Copy-Data.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-12-18
+:: Updated      : 2020-01-05
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -39,11 +39,29 @@ exit /B
 :: Running as administrator
 :mainScript
 
-echo Please enter the full path of the source (ie. D:\Users): 
-set /p "source="
+:: Information
+echo Please select a Source and Destination folder.
+echo.
 
-echo Please enter the full path of the destination (ie. C:\Users\Owner\Desktop\O942A1E1): 
-set /p "destination="
+:: Get source folder
+set "psCommand="(new-object -COM 'Shell.Application').BrowseForFolder(0,'Please choose a source folder.',0,0).self.path""
+for /f "usebackq delims=" %%I in (`powershell %psCommand%`) do set "source=%%I"
+
+:: Get destination folder
+set "psCommand="(new-object -COM 'Shell.Application').BrowseForFolder(0,'Please choose a destination folder.',0,0).self.path""
+for /f "usebackq delims=" %%I in (`powershell %psCommand%`) do set "destination=%%I"
+
+:: Confirm selection is correct
+echo Source: %source%
+echo Destination: %destination%
+echo.
+echo Is the above Source and Destination correct? [y/n]
+set /p "confirm="
+
+if NOT "%confirm%" == "y" (
+    cls
+    goto mainScript
+)
 
 :: Get source folder name
 for %%f in ("%source%") do set name=%%~nxf
@@ -58,11 +76,9 @@ if %source:~-1%==\ (
     set "source=%source%."
 )
 
-echo %source%
-
 :: Copy files from a source to a destination and write a log file
-robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /log:"%destination%\Log-%name%.txt" /np /tee
+robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /v /xf desktop.ini /log:"%destination%\CopyLog-%name%.txt" /np /tee
 
-echo Migrated all data from %source% to %destination%.
-echo A log has been saved to %destination%\Log-%name%.txt
+echo Migrated all data from %source% to %destination%
+echo A log has been saved to %destination%\CopyLog-%name%.txt
 pause
