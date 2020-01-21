@@ -11,8 +11,8 @@
 :: https://github.com/justinchapdelaine/it-resources
 ::--------------------------------------------------
 
-:: Use to get all installed packages: Get-AppxPackage | Select Name , PackageFullName
-:: To output all installed packages to desktop: Get-AppxPackage | Select Name, PackageFullName >"$env:userprofile\Desktop\InstalledApps_List.txt"
+:: Use to get all installed metro apps: Get-AppxPackage | Select Name , PackageFullName
+:: To get all installed msi programs: wmic product get name
 
 REM  --> Elevate permissions
 :: Self elevate script if not run as administrator
@@ -88,6 +88,11 @@ ECHO %vendor% | FINDSTR "Dell" >nul && (
 	) || (
 	REM Not Dell
 )
+ECHO %vendor% | FINDSTR "Micro-Star" >nul && (
+	goto MSI
+	) || (
+	REM Not Dell
+)
 goto End
 
 :Acer
@@ -128,6 +133,7 @@ REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushSaga* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushFriends* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *WildTangentGames* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *FarmHeroesSaga* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *SimpleSolitaire* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Booking* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *McAfeeSecurity* | Remove-AppxPackage"
@@ -183,6 +189,18 @@ wmic product where name="Dropbox Update Helper" call uninstall >nul
 wmic product where name="Dropbox 20 GB" call uninstall >nul
 wmic product where name="Product Registration" call uninstall >nul
 goto End
+
+:MSI
+echo Removing MSI specific bloatware
+REM -- Metro Apps ---
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *SpotifyMusic* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushFriends* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushSaga* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *LinkedInforWindows* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *NortonStudio* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Wordament* | Remove-AppxPackage"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *MicrosoftSudoku* | Remove-AppxPackage"
+REM --- Programs ---
 
 :End
 
