@@ -37,6 +37,11 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
+SET APPDIR=%~dp0
+SET ASSETDIR=%APPDIR%assets\
+cd %APPDIR%
+%~d0
+
 echo Setting desktop icons and time settings...
 echo:
 
@@ -50,12 +55,16 @@ REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu /v {59031a47-3f72-44a7-89c5-5595fe6b30ee} /t REG_DWORD /d 0 /f
 echo:
 
-echo 3. Set Time and Time Zone automatically
+echo 3. Display Settings
+copy "%ASSETDIR%shortcuts\Settings.lnk" "%HOMEPATH%\Desktop"
+echo:
+
+echo 4. Set Time and Time Zone automatically
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 REG ADD HKLM\SYSTEM\CurrentControlSet\Services\tzautoupdate /v Start /t REG_DWORD /d 3 /f
 echo:
 
-echo 4. Restart explorer to refresh desktop
+echo 5. Restart explorer to refresh desktop
 taskkill /f /im explorer.exe
 start explorer.exe
 start .

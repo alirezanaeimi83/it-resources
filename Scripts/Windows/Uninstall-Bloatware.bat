@@ -1,11 +1,11 @@
 @echo off
 
 ::--------------------------------------------------
-:: Set Windows 10 start menu tiles to specific layout
+:: Removes most pre-installed Bloatware from OEM units.
 :: 
-:: File Name    : Set-Tiles.bat
+:: File Name    : Uninstall-Bloatware.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-10-27
+:: Updated      : 2020-01-20
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
