@@ -46,13 +46,17 @@ echo Unit vendor: %vendor%
 echo:
 
 :: Disable automatic unwated application installation
-echo Disable Consumer Experience (Automatically App Installation)
+echo 1. Disable Consumer Experience (Automatically App Installation)
 REG ADD HKLM\Software\Policies\Microsoft\Windows\CloudContent /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1 /f
+echo:
 
 :: Disables ads (suggestions) in start menu
-echo Disable Suggestion In Start
+echo 2. Disable Suggestion In Start
 REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager /v SubscribedContent-338388Enabled /t REG_DWORD /d 0 /f
 echo:
+
+:: Start bloatware removal
+echo 3. Removing %vendor%bloatware, this may take a few minutes...
 
 :: Remove bloatware for specific vendor
 ECHO %vendor% | FINDSTR "Acer" >nul && (
@@ -93,7 +97,6 @@ ECHO %vendor% | FINDSTR "Micro-Star" >nul && (
 goto End
 
 :Acer
-echo Removing Acer bloatware, this may take a few minutes...
 REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *UserExperienceImprovementProgram* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *Booking* | Remove-AppxPackage"
@@ -129,7 +132,6 @@ REM --- Manual Uninstall ---
 goto End
 
 :HP
-echo Removing HP bloatware, this may take a few minutes...
 REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *SpotifyMusic* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushSaga* | Remove-AppxPackage"
@@ -154,7 +156,6 @@ wmic product where name="HP ePrint SW" call uninstall >nul
 goto End
 
 :Lenovo
-echo Removing Lenovo bloatware, this may take a few minutes...
 REM -- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *FarmHeroesSaga* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushFriends* | Remove-AppxPackage"
@@ -162,11 +163,11 @@ REM -- Programs ---
 goto End
 
 :Microsoft
-echo Removing Microsoft (Surface) bloatware, this may take a few minutes...
+REM --- Metro Apps ---
+REM --- Programs ---
 goto End
 
 :Asus
-echo Removing Asus bloatware, this may take a few minutes...
 REM --- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *WPSOffice* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *LinkedInforWindows* | Remove-AppxPackage"
@@ -185,7 +186,7 @@ wmic product where name="ASUS ZenAnywhere" call uninstall >nul
 goto End
 
 :Dell
-echo Removing Dell bloatware, this may take a few minutes...
+REM --- Metro Apps ---
 REM --- Programs ---
 wmic product where name="Dropbox Update Helper" call uninstall >nul
 wmic product where name="Dropbox 20 GB" call uninstall >nul
@@ -193,7 +194,6 @@ wmic product where name="Product Registration" call uninstall >nul
 goto End
 
 :MSI
-echo Removing MSI bloatware, this may take a few minutes...
 REM -- Metro Apps ---
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *SpotifyMusic* | Remove-AppxPackage"
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "Get-AppxPackage *CandyCrushFriends* | Remove-AppxPackage"
