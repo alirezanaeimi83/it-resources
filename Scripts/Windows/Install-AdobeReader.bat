@@ -5,7 +5,7 @@
 :: 
 :: File Name    : Install-AdobeReader.bat
 :: Author       : Justin Chapdelaine (@email)
-:: Updated      : 2019-10-27
+:: Updated      : 2020-01-21
 :: 
 :: Script posted at:
 :: https://github.com/justinchapdelaine/it-resources
@@ -14,7 +14,7 @@
 :: Variables
 set "folder=C:\STS\Programs\"
 set "file=AdobeReader.exe"
-set "url=http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120047/AcroRdrDC1902120047_en_US.exe"
+set "url=http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe"
 set "flags= '/sAll /rs"
 
 
