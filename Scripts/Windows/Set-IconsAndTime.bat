@@ -62,7 +62,8 @@ echo:
 
 echo 3. Display Settings
 if "%language%"=="fr-CA" (
-    copy "%ASSETDIR%shortcuts\Paramätres.lnk" "%HOMEPATH%\Desktop"
+    chcp 1252
+    copy "%ASSETDIR%shortcuts\Param√®tres.lnk" "%HOMEPATH%\Desktop"
 ) else (
     copy "%ASSETDIR%shortcuts\Settings.lnk" "%HOMEPATH%\Desktop"
 )
