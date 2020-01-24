@@ -42,6 +42,11 @@ SET ASSETDIR=%APPDIR%assets\
 cd %APPDIR%
 %~d0
 
+:: Get the default user localization
+for /f "delims=" %%a in ('powershell (Get-WinUserLanguageList^)[0].LanguageTag') do set language=%%a
+echo Language: %language%
+echo:
+
 echo Setting desktop icons and time settings...
 echo:
 
@@ -56,7 +61,11 @@ REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons
 echo:
 
 echo 3. Display Settings
-copy "%ASSETDIR%shortcuts\Settings.lnk" "%HOMEPATH%\Desktop"
+if "%language%"=="fr-CA" (
+    copy "%ASSETDIR%shortcuts\Paramätres.lnk" "%HOMEPATH%\Desktop"
+) else (
+    copy "%ASSETDIR%shortcuts\Settings.lnk" "%HOMEPATH%\Desktop"
+)
 echo:
 
 echo 4. Set Time and Time Zone automatically

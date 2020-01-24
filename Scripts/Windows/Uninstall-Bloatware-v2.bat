@@ -128,7 +128,7 @@ wmic product where name="Forge of Empires" call uninstall >nul
 wmic product where name="Acer UEIP Framework" call uninstall >nul
 wmic product where name="Acer Collection" call uninstall >nul
 REM --- Manual Uninstall ---
-"C:\Users\User\AppData\Local\Host App Service\Uninstall.exe" /SELF=1 /UN="C:\Users\User\AppData\Local\Temp\~nsu.tmp\Un_A.exe"
+"%LOCALAPPDATA%\Host App Service\Uninstall.exe" /SELF=1 /UN="%LOCALAPPDATA%\Temp\~nsu.tmp\Un_A.exe"
 goto End
 
 :HP
