@@ -61,6 +61,11 @@ REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons
 echo:
 
 echo 3. Display Settings
+if exist "%ASSETDIR%shortcuts\ParamŠtres.lnk" (
+    chcp 1252
+    rename "%ASSETDIR%shortcuts\ParamŠtres.lnk" "%ASSETDIR%shortcuts\Paramètres.lnk"
+)
+
 if "%language%"=="fr-CA" (
     chcp 1252
     copy "%ASSETDIR%shortcuts\Paramètres.lnk" "%HOMEPATH%\Desktop"
