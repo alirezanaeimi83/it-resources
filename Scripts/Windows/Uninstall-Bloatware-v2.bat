@@ -132,6 +132,13 @@ wmic product where name="Acer UEIP Framework" call uninstall >nul
 wmic product where name="Acer Collection" call uninstall >nul
 REM --- Manual Uninstall ---
 "%LOCALAPPDATA%\Host App Service\Uninstall.exe" /SELF=1 /UN="%LOCALAPPDATA%\Temp\~nsu.tmp\Un_A.exe"
+set startMenu=C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+if exist "%startMenu%\Amazon.lnk" (
+	del "%startMenu%\Amazon.lnk"
+)
+if exist "%startMenu%\Booking.com.lnk" (
+	del "%startMenu%\Booking.com.lnk"
+)
 goto End
 
 :HP
