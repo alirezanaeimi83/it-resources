@@ -45,10 +45,12 @@ echo:
 echo:
 
 :: Scan boot sector
+echo Boot sector remediation:
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType -BootSectorScan
 echo:
 
 :: Full system scan
+echo Full system remediation:
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 2
 echo:
 
