@@ -52,8 +52,7 @@ set "destination=C:\STS"
 
 :: Confirm selection is correct
 echo Source: %source%
-echo Is the above source correct? [y/n]
-set /p "confirm="
+set /p confirm="Is the above source correct? [y/n]: "
 
 if NOT "%confirm%" == "y" (
     cls
@@ -74,6 +73,8 @@ if %source:~-1%==\ (
 )
 
 :: Determine total size of source and display results
+echo.
+echo Calculating total size of source, this may take a few minutes...
 robocopy "%source%" "%destination%\%name%" /e /xj /eta /r:1 /w:0 /zb /efsraw /v /xf desktop.ini /np /njh /ndl /nc /ns /nfl /l
 
 echo See the above results under total for the size of the selected source.
