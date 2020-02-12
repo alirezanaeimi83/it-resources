@@ -14,7 +14,7 @@
 :: Variables
 set "folder=C:\STS\Programs\"
 set "file=Java.exe"
-set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=240728_5b13a193868b4bf28bcb45c792fce896"
+set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=241533_1f5b5a70bf22433b84d0e960903adac8"
 set "flags= /s"
 
 
