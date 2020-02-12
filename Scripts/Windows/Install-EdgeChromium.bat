@@ -1,9 +1,9 @@
 @echo off
 
 ::--------------------------------------------------
-:: Install Java
+:: Install Microsoft Edge Chromium
 :: 
-:: File Name    : Install-Java.bat
+:: File Name    : Install-EdgeChromium.bat
 :: Author       : Justin Chapdelaine (@email)
 :: Updated      : 2020-02-11
 :: 
@@ -13,9 +13,9 @@
 
 :: Variables
 set "folder=C:\STS\Programs\"
-set "file=Java.exe"
-set "url=https://javadl.oracle.com/webapps/download/AutoDL?BundleId=241533_1f5b5a70bf22433b84d0e960903adac8"
-set "flags= /s"
+set "file=MicrosoftEdgeSetup.exe"
+set "url=https://c2rsetup.officeapps.live.com/c2r/downloadEdge.aspx?ProductreleaseID=Edge&platform=Default&version=Edge&source=EdgeStablePage&Channel=Stable&language=en"
+set "flags="
 
 
 :: Create %folder%
