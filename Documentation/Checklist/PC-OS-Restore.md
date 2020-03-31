@@ -132,8 +132,8 @@ Service Summary:
 Service Breakdown:
 -------------------------
 • Removed bloatware that can cause system slowdown and deliver advertisements.*
-• Windows updated to latest version available for this unit.
-• Drivers updated to latest version provided by manufacturer:
+• Windows updated to the latest version available for this unit.
+• Drivers updated to the latest version provided by manufacturer:
 --- 
 • Installed requested software:
 --- 

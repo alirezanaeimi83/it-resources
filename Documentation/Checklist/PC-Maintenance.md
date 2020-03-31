@@ -133,9 +133,9 @@ Service Breakdown:
 • Windows integrity checked and corruption was repaired.
 • Removed potentially unwanted programs that can cause instability, slowdowns, and deliver advertisements.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit.
-• Drivers updated to latest version provided by manufacturer:
---- 
+• Windows updated to the latest version available for this unit.
+• Drivers updated to the latest version provided by manufacturer:
+---
 • System benchmark: Low/Average/High performance
 • Storage drive benchmark: Low/Average/High performance
 • <Security Suite> is active and up to date, with # days remaining on its license.

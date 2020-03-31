@@ -115,9 +115,9 @@ Service Breakdown:
 • Windows integrity test: Pass/Fail
 • Device driver check: Pass/Fail
 • System configuration check: Pass/Fail
-• Reliability History / Event Viewer: 
+• Reliability History / Event Viewer:
 --- No recurring issues.
 • System benchmark: Low/Average/High performance
-• Storage drive benchmark: Low/Aerage/High performance
+• Storage drive benchmark: Low/Average/High performance
 • <Security> is active and has # days remaining in its license.
 ```
