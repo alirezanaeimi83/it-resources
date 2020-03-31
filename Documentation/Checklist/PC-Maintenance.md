@@ -17,12 +17,12 @@
 [Customer Note](#customer-note) <br>
 
 ### Initial
-> - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
+> - [ ] Disable monitor and sleep timeout
 > - [ ] S.M.A.R.T check
 
 ```
---- Initialization Started ---
++++ Initialization Started +++
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
 Windows S.M.A.R.T test: Pass/Fail 
@@ -30,11 +30,13 @@ Windows S.M.A.R.T test: Pass/Fail
 ```
 
 #### Hardware
-> - [ ] Hard Drive test
+> - [ ] Storage drive test
+> - [ ] Hardware test
 
 ```
---- Hardware Test Started ---
++++ Hardware Test Started +++
 CrystalDisk hard drive test result: Pass/Fail
+PC-Check basic hardware test result: Pass/Fail
 --- Hardware Test Completed ---
 ```
 
@@ -43,29 +45,29 @@ CrystalDisk hard drive test result: Pass/Fail
 > - [ ] AdwCleaner clean
 
 ```
---- Security Scan Started ---
-AdwCleaner: Security threats removed: #
-Malwarebytes: Security threats detected: #
++++ Security Scan Started +++
+AdwCleaner - Security threats removed: #
+Malwarebytes - Security threats detected: #
 --- Security Scan Completed ---
 ```
 
 ### Windows
-> - [ ] Repair operating system
 > - [ ] Repair drive file system
+> - [ ] Repair operating system
 
 ```
---- System Repair Started ---
-Disk file system repair result: Pass/Fail
++++ System Repair Started +++
+File system repair result: Pass/Fail
 Windows integrity repair result: Pass/Fail
 --- System Repair Completed ---
 ```
 
 ### Optimization
-> - [ ] Remove PUPs
-> - [ ] CCleaner on file and registry
+> - [ ] Remove potentially unwated programs (PUPs / PUAs)
+> - [ ] CCleaner on junk and registry
 
 ```
---- Optimization Started ---
++++ Optimization Started +++
 Potentially unwanted programs removed:
 - No malicious items.
 Device optimization started
@@ -78,7 +80,7 @@ Device optimization completed
 > - [ ] Driver updates
 
 ```
---- Updates Started ---
++++ Updates Started +++
 System updates started
 System updates completed
 Driver updates started
@@ -87,14 +89,16 @@ Driver updates completed
 ```
 
 ### Additional
-> - [ ] Test concerns from customer
 > - [ ] Check security suite
 > - [ ] Perform a system benchmark
+> - [ ] Perform a drive benchmark
+> - [ ] Test concerns from customer
 
 ```
---- Customization Started ---
-<Security Suite> is active, updated and expires in # days
-System Benchmark: Low/Average/High performance
++++ Customization Started +++
+<Security Suite> is active and up to date, with # days remaining on its license.
+System benchmark: Low/Average/High performance
+Storage drive benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
@@ -104,7 +108,7 @@ System Benchmark: Low/Average/High performance
 > - [ ] Write service summary and recommendations
 
 ```
---- Cleanup Started ---
++++ Cleanup Started +++
 Power settings reset to default
 Removed remote tools
 --- Cleanup Completed ---
@@ -114,26 +118,27 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
-<Summary of service>
+<summary of service>
 
 Recommendation:
 -------------------------
-1) <type custom recommendation>
-
+1) <custom recommendation>
 
 Service Breakdown:
 -------------------------
+• Basic hardware test: Pass/Fail
 • Adware threats removed: #
 • Malware threats detected: #
-• Disk file system checked and errors were repaired.
+• File system checked and errors were repaired.
 • Windows integrity checked and corruption was repaired.
-• Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisements.*
+• Removed potentially unwanted programs that can cause instability, slowdowns, and deliver advertisements.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit (Version 1909).
+• Windows updated to latest version avaliable for this unit.
 • Drivers updated to latest version provided by manufacturer:
 --- 
-• System Benchmark: Low/Average/High performance
-• <Security> is active and up to date, expires in #
+• System benchmark: Low/Average/High performance
+• Storage drive benchmark: Low/Average/High performance
+• <Security Suite> is active and up to date, with # days remaining on its license.
 
 *Potentially Unwanted Programs Removed:
 - <list programs>

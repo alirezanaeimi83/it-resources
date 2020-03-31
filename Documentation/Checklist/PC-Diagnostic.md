@@ -15,12 +15,12 @@
 [Customer Note](#customer-note) <br>
 
 #### Initial
-> - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
+> - [ ] Disable monitor and sleep timeout
 > - [ ] S.M.A.R.T check
 
 ```
---- Initialization Started ---
++++ Initialization Started +++
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
 Windows S.M.A.R.T test: Pass/Fail 
@@ -28,13 +28,13 @@ Windows S.M.A.R.T test: Pass/Fail
 ```
 
 #### Hardware
-> - [ ] Hard Drive test
-> - [ ] Hardware diagnostic
+> - [ ] Storage drive test
+> - [ ] Hardware test
 
 ```
---- Hardware Test Started ---
++++ Hardware Test Started +++
 CrystalDisk hard drive test result: Pass/Fail
-PC-Check Hardware test result: Pass/Fail
+PC-Check standard hardware test result: Pass/Fail
 --- Hardware Test Completed ---
 ```
 
@@ -43,9 +43,9 @@ PC-Check Hardware test result: Pass/Fail
 > - [ ] Malwarebytes scan
 
 ```
---- Security Scan Started ---
-AdwCleaner: Security threats detected: #
-Malwarebytes: Security threats detected: #
++++ Security Scan Started +++
+AdwCleaner - Security threats detected: #
+Malwarebytes - Security threats detected: #
 --- Security Scan Completed ---
 ```
 
@@ -58,8 +58,9 @@ Malwarebytes: Security threats detected: #
 > - [ ] Event Viewer
 
 ```
---- System Diagnostic Started ---
-Disk file system test result: Pass/Fail
++++ System Diagnostic Started +++
+Current Windows feature update: #
+File system test result: Pass/Fail
 Windows integrity test result: Pass/Fail
 Device manager check: Pass/Fail
 System configuration check: Pass/Fail
@@ -69,14 +70,16 @@ Reliability History / Event Viewer:
 ```
 
 #### Additional
-> - [ ] Test concerns from customer
 > - [ ] Check security suite
 > - [ ] Perform a system benchmark
+> - [ ] Perform a drive benchmark
+> - [ ] Test concerns from customer
 
 ```
---- Customization Started ---
++++ Customization Started +++
 <Security Suite> is active, updated and expires in # days
-System Benchmark: Low/Average/High performance
+System benchmark: Low/Average/High performance
+Storage drive benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
@@ -86,7 +89,7 @@ System Benchmark: Low/Average/High performance
 > - [ ] Write service summary and recommendations
 
 ```
---- Cleanup Started ---
++++ Cleanup Started +++
 Power settings reset to default
 Removed remote tools
 --- Cleanup Completed ---
@@ -96,23 +99,25 @@ Removed remote tools
 ```
 Service Summary:
 -------------------------
-<Summary of service>
+<summary of service>
 
 Recommendation:
 -------------------------
-1) <type custom recommendation>
+1) <custom recommendation>
 
 Service Breakdown:
 -------------------------
-• Hardware Test: Pass/Fail
-• Malware Threats Found: #
-• Adware Threats Found: #
-• Disk File System Test: Pass/Fail
-• Windows Integrity Test: Pass/Fail
-• Device Driver Check: Pass/Fail
-• System Configuration Check: Pass/Fail
+• Standard hardware test: Pass/Fail
+• Adware threats Found: #
+• Malware threats Found: #
+• Current windows feature update: #
+• File system test: Pass/Fail
+• Windows integrity test: Pass/Fail
+• Device driver check: Pass/Fail
+• System configuration check: Pass/Fail
 • Reliability History / Event Viewer: 
 --- No recurring issues.
-• System Benchmark: Low/Average/High performance
-• <Security> is active and up to date, expires in #
+• System benchmark: Low/Average/High performance
+• Storage drive benchmark: Low/Aerage/High performance
+• <Security> is active and has # days remaining in its license.
 ```

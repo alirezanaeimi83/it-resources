@@ -16,28 +16,30 @@
 [Customer Note](#customer-note) <br>
 
 ### Initial
-> - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number 
+> - [ ] Disable monitor and sleep timeout
 > - [ ] S.M.A.R.T check
 > - [ ] Create restore point
 
 ```
---- Initialization Started ---
++++ Initialization Started +++
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
 Windows S.M.A.R.T test: Pass/Fail 
-Restore point created: 'Setup Start'
+Restore point created: 'Staples Service Start'
 --- Initialization Completed ---
 ```
 
 #### Hardware
-> - [ ] Hard Drive test
 > - [ ] Windows install date
+> - [ ] Hard Drive test
+> - [ ] Hardware test
 
 ```
---- Hardware Test Started ---
-CrystalDisk hard drive test result: Pass/Fail
++++ Hardware Test Started +++
 Original Install Date: <yyy/mm/dd>
+CrystalDisk hard drive test result: Pass/Fail
+PC-Check basic hardware test result: Pass/Fail
 --- Hardware Test Completed ---
 ```
  
@@ -46,7 +48,7 @@ Original Install Date: <yyy/mm/dd>
 > - [ ] Driver Updates
 
 ```
---- Updates Started ---
++++ Updates Started +++
 System updates started
 System updates completed
 Driver updates started
@@ -56,15 +58,20 @@ Driver updates completed
 
 ### Optimization
 > - [ ] Remove bloatware
-> - [ ] Use CCleaner on file and registry
+> - [ ] Use CCleaner on junk and registry
 
 ```
---- Optimization Started ---
++++ Optimization Started +++
 Bloatware removal started
 Bloatware removal completed
-Device optimization started
+Device optimization started:
+- Adjusted time zone and current time based on location.
+- Enabled basic desktop icons.
+- Disabled suggestions and ads in Start Menu.
+- Disabled Windows welcome experience.
+- Disabled Tips, tricks, and suggestions.
 Device optimization completed
---- Optimization Completed
+--- Optimization Completed ---
 ```
 
 ### Software Installation
@@ -74,7 +81,7 @@ Device optimization completed
 > - [ ] Set program defaults
 
 ```
---- Software Installation Started---
++++ Software Installation Started +++
 Microsoft Office: installed and activated
 Security: installed and activation
 Installed programs set as default
@@ -88,7 +95,7 @@ Installed programs set as default
 > - [ ] Data Migration
 
 ```
---- Customization Started ---
++++ Customization Started +++
 Email account(s) setup in Windows Mail:
 -
 Recovery media creation started
@@ -96,8 +103,8 @@ Recovery media creation completed
 --- Customization Completed ---
 ```
 ```
---- Data Migration Started ---
-Migrated all data from <source> to <destination>:
++++ Data Migration Started +++
+Copied all data from <source> to <destination>:
 <robocopy results>
 --- Data Migration Complete ---
 ```
@@ -109,9 +116,9 @@ Migrated all data from <source> to <destination>:
 > - [ ] Write service summary
 
 ```
---- Cleanup Started ---
-Power settings reset to default
++++ Cleanup Started +++
 Removed remote tools
+Power settings reset to default
 Restore point created: 'OS Restore Complete'
 --- Cleanup Completed ---
 ```
@@ -120,12 +127,12 @@ Restore point created: 'OS Restore Complete'
 ```
 Service Summary:
 -------------------------
-
+<write summary>
 
 Service Breakdown:
 -------------------------
-• Removed bloatware that can cause system slowdown and delivers advertisements.*
-• Windows updated to latest version available for this unit (Version 1909).
+• Removed bloatware that can cause system slowdown and deliver advertisements.*
+• Windows updated to latest version available for this unit.
 • Drivers updated to latest version provided by manufacturer:
 --- 
 • Installed requested software:
@@ -133,9 +140,9 @@ Service Breakdown:
 • Email account(s) setup with Windows Mail:
 --- 
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Created restore point 'OS Restore Complete'. The computer can be restored to this point if something goes wrong in the future.
+• Created restore point 'Staples Service Complete'. The computer can be restored to this point if something goes wrong in the future.
 • Created recovery drive to help troubleshoot and fix problems with computer, even if it won’t start.
-• Migrated all data from <source> to <destination>
+• Copied all data from <source> to <destination>
 ```
 | HP | Acer | Lenovo | Microsoft|
 | --- | --- | --- | --- |

@@ -17,12 +17,12 @@
 [Customer Note](#customer-note) <br>
 
 ### Initial
-> - [ ] Disable monitor and sleep timeout
 > - [ ] Verify serial number
+> - [ ] Disable monitor and sleep timeout
 > - [ ] S.M.A.R.T check
 
 ```
---- Initialization Started ---
++++ Initialization Started +++
 Unit serial matches ticket: Yes/No
 Disabled monitor and sleep timeout
 Windows S.M.A.R.T test: Pass/Fail 
@@ -30,12 +30,14 @@ Windows S.M.A.R.T test: Pass/Fail
 ```
 
 #### Hardware
-> - [ ] Hard Drive test
+> - [ ] Storage drive test
+> - [ ] Hardware test
 
 ```
---- Hardware Test Started ---
++++ Hardware Test Started +++
 CrystalDisk hard drive test result: Pass/Fail
---- Hardware Test Completed
+PC-Check basic hardware test result: Pass/Fail
+--- Hardware Test Completed ---
 ```
 
 ### Remediation
@@ -44,10 +46,10 @@ CrystalDisk hard drive test result: Pass/Fail
 > - [ ] Verification scan
 
 ```
---- Security Remediation Started ---
-AdwCleaner: Security threats removed: #
-Malwarebytes: Security threats removed: #
-Verification: Security threats remaining: #
++++ Security Remediation Started +++
+AdwCleaner - Security threats removed: #
+Malwarebytes - Security threats removed: #
+Verification - Security threats remaining: #
 --- Security Remediation Completed ---
 ```
 
@@ -56,8 +58,8 @@ Verification: Security threats remaining: #
 > - [ ] Repair drive file system
 
 ```
---- System Repair Started ---
-Disk file system repair result: Pass/Fail
++++ System Repair Started +++
+File system repair result: Pass/Fail
 Windows integrity repair result: Pass/Fail
 --- System Repair Completed ---
 ```
@@ -67,7 +69,7 @@ Windows integrity repair result: Pass/Fail
 > - [ ] CCleaner on file and registry
 
 ```
---- Optimization Started ---
++++ Optimization Started +++
 Potentially unwanted programs removed:
 - No malicious items
 Device optimization started
@@ -80,7 +82,7 @@ Device optimization completed
 > - [ ] Driver updates
 
 ```
---- Updates Started ---
++++ Updates Started +++
 System updates started
 System updates completed
 Driver updates started
@@ -89,14 +91,16 @@ Driver updates completed
 ```
 
 ### Additional
-> - [ ] Test concerns from customer
 > - [ ] Check security suite
 > - [ ] Perform a system benchmark
+> - [ ] Perform a drive benchmark
+> - [ ] Test concerns from customer
 
 ```
---- Customization Started ---
++++ Customization Started +++
 <Security Suite> is active, updated and expires in # days
-System Benchmark: Low/Average/High performance
+System benchmark: Low/Average/High performance
+Storage drive benchmark: Low/Average/High performance
 --- Customization Completed ---
 ```
 
@@ -107,10 +111,10 @@ System Benchmark: Low/Average/High performance
 > - [ ] Write service summary and recommendation
 
 ```
---- Cleanup Started ---
-Power settings reset to default
++++ Cleanup Started +++
 Removed remote tools
-Restore point created: 'Virus Removal Complete'
+Power settings reset to default
+Restore point created: 'Staples Service Complete'
 --- Cleanup Completed ---
 ```
 ### Customer Note
@@ -127,11 +131,12 @@ Service Breakdown:
 • Windows integrity checked and corruption was repaired.
 • Removed potentially unwanted programs from device that can cause instability, slowdowns, and deliver advertisements.*
 • Optimized registry and removed unnecessary junk files to speed up boot time.
-• Windows updated to latest version avaliable for this unit (Version 1909).
+• Windows updated to latest version avaliable for this unit.
 • Drivers updated to latest version provided by manufacturer:
 --- 
 • System Benchmark: Low/Average/High performance
-• <Security> is active and up to date, expires in # days
+• Storage drive benchmark: Low/Average/High performance
+• <Security Suite> is active and up to date, with # days remaining on its license.
 • Created restore point 'Virus Removal Complete'. The computer can be restored to this point if something goes wrong in the future.
 
 *Potentially Unwanted Programs Removed:
